@@ -2129,7 +2129,7 @@ blockquote span{
 }
 .tab-head .box-tab li.active a{
     font-weight: 500;
-    color: #191919;
+    color: blue;
 }
 .tab-head .box-tab li a:hover{
     color: #191919;
@@ -2783,14 +2783,16 @@ blockquote span{
     border-radius: 2px;
 }
 .product-item:not(.style2):not(.style3):not(.style4):not(.product-list-item):hover{
-    border: 1px solid transparent;
-    border-top: 1px solid #ebebeb;
+    border: 1px solid blue;
+    border-top: 1px solid blue;
     -webkit-box-shadow: 0px 0px 28px 7px #eaeaea;
     -moz-box-shadow: 0px 0px 28px 7px #eaeaea;
     box-shadow: 0px 10px 15px #eaeaea;
 }
 .product-item .product-top{
     padding:0 18px;
+    height: 87px;
+    width: 268px;
 }
 .product-item .cat-list{
     font-size: 12px;
@@ -2951,7 +2953,8 @@ blockquote span{
     border-top:1px solid transparent;
 }
 .product-item:hover .group-btn-control{
-    border: 1px solid transparent;
+    border: 1px solid blue;
+    border-top: 1px solid transparent;
     opacity:1;
     visibility: visible;
     bottom: -82px;
@@ -3973,11 +3976,11 @@ blockquote span{
         border: 1px solid transparent;
     }
     .product-item .group-btn-control{
-        border-top: 1px solid #ebebeb;
+        border-top: 1px solid blue;
     }
     .product-item:hover .group-btn-control{
         box-shadow: none;
-        border-top: 1px solid #ebebeb;
+        border-top: 1px solid transparent;
     }
     .content-sidebar .product-list-item .product-media{
         width: 240px;
@@ -3994,7 +3997,7 @@ blockquote span{
         margin-bottom: 20px;
     }
     .product-item .group-btn-control .inner{
-        border: none;
+        /* border: none; */
     }
     .tab-head:not(.style2) .box-tab{
         float: none;
@@ -7155,6 +7158,12 @@ blockquote span{
     width: 100%;
     padding: 32px 30px 0 30px;
 }
+
+.thumb-item-product-imgs{
+    height: 230px; !important;
+    width: 230px; !important;
+}
+
 @media (max-width: 991px) {
     .modal-dialog{
         width: 600px;
