@@ -5506,6 +5506,7 @@ blockquote span{
 .main-menu .megamenu li{
     padding: 5px 0;
 }
+
 .header-top .submenu li:hover,
 .main-menu .submenu:not(.megamenu) li:hover{
     background: #333041;
@@ -5516,6 +5517,13 @@ blockquote span{
     color: #fff;
     white-space: nowrap;
     display: block;
+}
+.main-menu .submenu .items-child-1 a{
+    font-size: 10px;
+    padding: 0px 0px 0px 10px;
+}
+.main-menu .megamenu .items-child-1{
+    padding: 0px!important;;
 }
 .main-header .logo{
     width: 300px;
