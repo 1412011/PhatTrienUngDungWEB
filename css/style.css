@@ -548,6 +548,7 @@ body {
     line-height: 30px;
     font-weight: 400;
     overflow-x: hidden;
+    font-family: Tahoma;
 }
 label {
     font-weight: normal;
@@ -5477,7 +5478,8 @@ blockquote span{
     text-transform: uppercase;
     font-weight: 500;
     color: #4c4c4c;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: bold;
 }
 .menu-second .main-menu>li>a{
     color: #000000;
@@ -5519,7 +5521,7 @@ blockquote span{
     display: block;
 }
 .main-menu .submenu .items-child-1 a{
-    font-size: 10px;
+    font-size: 13px;
     padding: 0px 0px 0px 10px;
 }
 .main-menu .megamenu .items-child-1{
@@ -5543,7 +5545,7 @@ blockquote span{
     vertical-align: middle;
 }
 .header.style3 .register{
-    font-size: 12px;
+    font-size: 14px;
     width: inherit;
     margin-left: 15px;
 }
@@ -5768,7 +5770,7 @@ blockquote span{
 }
 .header-control{
     float: right;
-    margin-top: 12px;
+    margin-top: 6px;
 }
 .header .transport{
     padding: 0;
@@ -5849,7 +5851,7 @@ blockquote span{
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .megamenu{
-    max-width:680px;
+    max-width:600px;
 }
 .megamenu2{
     max-width:1092px;
@@ -6698,7 +6700,8 @@ blockquote span{
     max-width: inherit;
 }
 .box-slider.opt-4{
-    width:calc( 100% - 301px );
+    margin-top:15px;
+    width:calc( 100%);
     display: inline-block;
     margin-right: 17px;
 }
