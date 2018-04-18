@@ -6403,7 +6403,7 @@ blockquote span{
     .header .transport{
         display: none;
     }
-    .header.style4 .main-header .box-items-right{
+    .header.style4 .main-header ..modal-dialog{
         display: block;
     }
     .mini-cart-content{
@@ -7071,7 +7071,9 @@ blockquote span{
 }
 /****popup-newsletter*****/
 .modal-dialog{
-    width: 968px;
+
+    text-align: center;
+    width: 500px;
     top: 50%;
     left: 50%;
     position: fixed;
@@ -7085,14 +7087,53 @@ blockquote span{
 .modal-content{
     border-radius: 0;
 }
-.modal-content .close{
-    float: right;
-    font-size: 18px;
-    color: #4c4c4c;
-    margin-top: 10px;
-    cursor: pointer;
+.close-modal-x{
+    text-align: right;
 }
-.block-newletter-popup{
+.header-title-modal{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.form-login-input{
+    padding: 0px 80px;
+  
+}
+.form-login-input .form-input{
+    margin:10px 0px;
+}
+
+.form-login-input .submit-login{
+   width: 300px;
+   margin-top: 20px;
+   border-radius: 25px;
+   background-color: none;
+   color: red;
+   border: 1px solid #ff5050;
+   font-weight: 500;
+   text-transform: uppercase;
+
+}
+.form-login-input .submit-login:hover{
+    background-color: #ff5050;
+    color: white;
+
+}
+input[type="checkbox"] {
+    margin-top: 8px;
+}
+
+.checkbox{
+    text-align: left;
+}
+
+.fg-pass{
+    text-align: left;
+    font-style: italic;
+    color: blue;
+    font-size: 14px;
+}
+/* .block-newletter-popup{
     padding: 0 20px;
 }
 .block-newletter-popup .text-b{
@@ -7168,7 +7209,7 @@ blockquote span{
     display: inline-block;
     width: 100%;
     padding: 32px 30px 0 30px;
-}
+} */
 
 .thumb-item-product-imgs{
     height: 230px; !important;
