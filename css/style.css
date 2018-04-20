@@ -7123,8 +7123,19 @@ input[type="checkbox"] {
     margin-top: 8px;
 }
 
-.checkbox{
+.form-login-input .checkbox{
     text-align: left;
+}
+
+.form-login-input .cb-dieukhoan{
+    margin: 4px 0px;
+    font-style: italic;
+    font-size: 13px;
+}
+
+.form-login-input .cb-dieukhoan .a-txt-gach-chan{
+    text-decoration: underline;
+    color: blue;
 }
 
 .fg-pass{

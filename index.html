@@ -108,13 +108,14 @@
                 </ul>
             </div>
             <div class="box-items-right">
-                <a data-toggle="modal" href="#myModal" class="">Register / log in</a>
+                <a data-toggle="modal" href="#modal-login" class="">Register / log in</a>
             </div>
         </div>
         
+         <!-- modal Login -->
         <div class="container">
             <!-- Modal -->
-            <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal fade" id="modal-login" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-body">
@@ -130,14 +131,22 @@
                                     <div class="form-input">
                                         <input type="password" class="form-control" placeholder="Mật khẩu">
                                     </div>
+
+                                    <div class="form-group">
+                                        <div class="g-recaptcha" data-sitekey="" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
+                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+
                                     <div class="checkbox">
                                         <label><input type="checkbox" value="">Ghi nhớ</label>
                                     </div>
                                     <p class="form-submit">
                                         <button type="button" class="btn btn-default submit-login">Login</button>
                                     </p>
+
                                     <div class="fg-pass">
-                                        <a class="register" href="">Đăng ký tài khoản mới</a>
+                                        <a class="register" data-dismiss="modal" data-toggle="modal" href="#modal-register">Đăng ký tài khoản mới</a>
                                     </div>
                                     <div class="fg-pass">
                                         <a class="forget-password" href="">Quên mật khẩu</a>
@@ -150,7 +159,46 @@
                  
                 </div>
             </div>
-        </div>
+        </div> <!-- end modal Login -->
+        
+        <!-- modal register -->
+        <div class="container">
+            <!-- Modal -->
+            <div class="modal fade" id="modal-register" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="close-modal-x">
+                                <a data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span></a>
+                            </div>
+                            <h3 class="header-title-modal">Đăng ký SmartMarket</h3>
+                            <div class="form-login-input">
+                                <form>
+                                    <div class="form-input">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="password" class="form-control" placeholder="Mật khẩu">
+                                    </div>
+                                    <div class="form-input">
+                                        <input type="password" class="form-control" placeholder="Nhập lại Mật khẩu">
+                                    </div>
+                                   <div class="checkbox cb-dieukhoan">
+                                        <label><input type="checkbox" value="">Chấp nhận <a class="a-txt-gach-chan" href="">điều khoản</a> của SmartMarket</label>
+                                    </div>
+                                    <p class="form-submit">
+                                        <button type="button" class="btn btn-default submit-login">Đăng ký ngay</button>
+                                    </p>
+
+                                </form>
+                            </div>                                
+                        </div>
+                      
+                    </div> <!-- modal content -->
+                 
+                </div>
+            </div>
+        </div> <!-- end modal register -->
 
         <div class="header-nav">
             <div class="vertical-menu">
@@ -290,8 +338,8 @@
                                 <figure><img src="images/icon1.png" alt="img"></figure>
                             </div>
                             <div class="info">
-                                <h3 class="h3-text">Free Delivery</h3>
-                                <span>For all order over 99$</span>
+                                <h3 class="h3-text">Miễn phí vận chuyển</h3>
+                                <span>Cho các hóa đơn >500k</span>
                             </div>
                         </div>
                     </div>
@@ -301,8 +349,8 @@
                                 <figure><img src="images/icon2.png" alt="img"></figure>
                             </div>
                             <div class="info">
-                                <h3 class="h3-text">30 Days Return</h3>
-                                <span>If goods have Problems</span>
+                                <h3 class="h3-text">Đổi trả trong 15 ngày</h3>
+                                <span>Nếu sản phẩm có vấn đề</span>
                             </div>
                         </div>
                     </div>
@@ -312,8 +360,8 @@
                                 <figure><img src="images/icon3.png" alt="img"></figure>
                             </div>
                             <div class="info">
-                                <h3 class="h3-text">Secure Payment</h3>
-                                <span>100% secure payment</span>
+                                <h3 class="h3-text">Thanh toán an toàn</h3>
+                                <span>100% bảo mật khi thanh toán</span>
                             </div>
                         </div>
                     </div>
@@ -323,8 +371,8 @@
                                 <figure><img src="images/icon4.png" alt="img"></figure>
                             </div>
                             <div class="info">
-                                <h3 class="h3-text">24/7 Support</h3>
-                                <span>Dedicated support</span>
+                                <h3 class="h3-text">Hỗ trợ 24/7</h3>
+                                <span>Tư vấn hỗ trợ nhanh</span>
                             </div>
                         </div>
                     </div>
@@ -333,69 +381,7 @@
             <div class="col-ts-12 margin-bottom-45">
                 <div class="separator"></div>
             </div>
-            <section id="section2" class="margin-bottom-40">
-                <div class="title-head">
-                    <h3 class="title-block">Top Categories</h3>
-                </div>
-                <div class="owl-carousel nav-style-1" data-nav="true" data-autoplay="true" data-dots="false" data-loop="true" data-margin="20" data-responsive='{"0":{"items":1},"400":{"items":2},"640":{"items":3},"768":{"items":3},"992":{"items":4},"1199":{"items":4},"1366":{"items":5},"1620":{"items":5}}'>
-                    <div class="product-categories style1">
-                        <div class="thumb">
-                            <figure><img src="images/cate1.jpg" alt=""></figure>
-                        </div>
-                        <div class="content">
-                            <h4 class="title"><a href="#">Điện thoại</a></h4>
-                        </div>
-                    </div>
-                    <div class="product-categories style1">
-                        <div class="thumb">
-                            <figure><img src="images/cate2.jpg" alt=""></figure>
-                        </div>
-                        <div class="content">
-                            <h4 class="title"><a href="#">Máy tính bảng</a></h4>
-                        </div>
-                    </div>
-                    <div class="product-categories style1">
-                        <div class="thumb">
-                            <figure><img src="images/cate3.jpg" alt=""></figure>
-                        </div>
-                        <div class="content">
-                            <h4 class="title"><a href="#">SamSung</a></h4>
-                        </div>
-                    </div>
-                    <div class="product-categories style1">
-                        <div class="thumb">
-                            <figure><img src="images/cate4.jpg" alt=""></figure>
-                        </div>
-                        <div class="content">
-                            <h4 class="title"><a href="#">Apple</a></h4>
-                        </div>
-                    </div>
-                    <div class="product-categories style1">
-                        <div class="thumb">
-                            <figure><img src="images/cate6.jpg" alt=""></figure>
-                        </div>
-                        <div class="content">
-                            <h4 class="title"><a href="#">Sony</a></h4>
-                        </div>
-                    </div>
-                    <div class="product-categories style1">
-                        <div class="thumb">
-                            <figure><img src="images/cate5.jpg" alt=""></figure>
-                        </div>
-                        <div class="content">
-                            <h4 class="title"><a href="#">Nokia</a></h4>
-                        </div>
-                    </div>
-                    <div class="product-categories style1">
-                        <div class="thumb">
-                            <figure><img src="images/cate5.jpg" alt=""></figure>
-                        </div>
-                        <div class="content">
-                            <h4 class="title"><a href="#">HTC</a></h4>
-                        </div>
-                    </div>
-                </div>
-            </section>
+
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-lg-9">
                     <section id="section3" class="margin-bottom-15">
@@ -2205,32 +2191,34 @@
            
                             </div>
                         </div>
-                        <div id="tab-2" class="tab-panel">
+                        <div id="tab-2" class="tab-panel ">
                             <div class="owl-carousel nav-style-1" data-nav="false" data-autoplay="false" data-dots="true" data-loop="true" data-margin="30" data-responsive='{"0":{"items":1},"480":{"items":2},"640":{"items":2},"768":{"items":3},"992":{"items":3},"1199":{"items":4},"1366":{"items":4},"1620":{"items":4}}'>
+
                                 <div class="product-item">
                                     <div class="product-top equal-elem">
-                                        <span class="cat-list">Aquaracer</span>
-                                        <h3 class="product-name"><a href="#">Blue Yeti USB Microphone Blackout Edition</a></h3>
+                                        <span class="cat-list">APPLE</span>
+                                        <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <span>(0)</span>
+                                        </div>
+                                        <h3 class="product-name"><a href="#">Máy tính bảng iPad Pro 10.5 inch Wifi Cellular 64GB (2017)</a></h3>
                                     </div>
                                     <div class="product-media">
                                         <figure>
                                             <a href="#">
-                                                <img alt="img" src="images/b19.jpg">
+                                                <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-pro-2017-0.png">
                                             </a>
                                         </figure>
                                         <a href="#" class="quick-view">quick view</a>
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">$395.00</span>
-                                            <div class="star-rating">
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <span>(0)</span>
-                                            </div>
+                                            <span class="price">19.990.000 đ</span>
+                                            
                                         </div>
                                         <div class="group-btn-control">
                                             <div class="inner">
@@ -2241,33 +2229,32 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="product-item">
                                     <div class="product-top equal-elem">
-                                        <span class="cat-list">Iphone</span>
-                                        <h3 class="product-name"><a href="#">Samsung CF591 Series Curved 27-Inch FHD Monitor</a></h3>
+                                        <span class="cat-list">SAMSUNG</span>
+                                        <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <span>(0)</span>
+                                        </div>
+                                        <h3 class="product-name"><a href="#">Máy tính bảng Samsung Galaxy Tab A6 10.1 Spen</a></h3>
                                     </div>
                                     <div class="product-media">
                                         <figure>
                                             <a href="#">
-                                                <img alt="img" src="images/b2.jpg">
+                                                <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ss-tab-a6-7in-0.png">
                                             </a>
                                         </figure>
-                                        <div class="flash">
-                                            <span class="onnew">new</span>
-                                        </div>
                                         <a href="#" class="quick-view">quick view</a>
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">$495.00</span>
-                                            <div class="star-rating">
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <span>(0)</span>
-                                            </div>
+                                            <span class="price">7.990.000 đ</span>
+                                            
                                         </div>
                                         <div class="group-btn-control">
                                             <div class="inner">
@@ -2278,25 +2265,32 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="product-item">
                                     <div class="product-top equal-elem">
-                                        <span class="cat-list">Camera</span>
-                                        <h3 class="product-name"><a href="#">Blue Yeti USB Microphone Blackout Edition</a></h3>
+                                        <span class="cat-list">APPLE</span>
+                                        <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <span>(0)</span>
+                                        </div>
+                                        <h3 class="product-name"><a href="#">Máy tính bảng iPad Air 2 Cellular 128GB</a></h3>
                                     </div>
                                     <div class="product-media">
                                         <figure>
                                             <a href="#">
-                                                <img alt="img" src="images/b3.jpg">
+                                                <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-air-2-128-0.png">
                                             </a>
                                         </figure>
                                         <a href="#" class="quick-view">quick view</a>
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">
-                                                <ins>$195.00</ins>
-                                                <del>299.99</del>
-                                            </span>
+                                            <span class="price">15.490.000 đ</span>
+                                            
                                         </div>
                                         <div class="group-btn-control">
                                             <div class="inner">
@@ -2307,28 +2301,32 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="product-item">
                                     <div class="product-top equal-elem">
-                                        <span class="cat-list">Macbook</span>
-                                        <h3 class="product-name"><a href="#">DYMO LabelWriter 450 Turbo Thermal Label Printer</a></h3>
+                                        <span class="cat-list">HUAWEI</span>
+                                        <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <span>(0)</span>
+                                        </div>
+                                        <h3 class="product-name"><a href="#">Máy tính bảng Huawei MediaPad M3 8.0 (2017)</a></h3>
                                     </div>
                                     <div class="product-media">
                                         <figure>
                                             <a href="#">
-                                                <img alt="img" src="images/b5.jpg">
+                                                <img alt="img" class="thumb-item-product-imgs" src="images/imgs/hw-pad-m3-8in-0.png">
                                             </a>
                                         </figure>
-                                        <div class="flash sale">
-                                            <span class="onsale">-$35</span>
-                                        </div>
                                         <a href="#" class="quick-view">quick view</a>
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">
-                                                <ins>$345.00</ins>
-                                                <del>429.99</del>
-                                            </span>
+                                            <span class="price">5.990.000 đ</span>
+                                            
                                         </div>
                                         <div class="group-btn-control">
                                             <div class="inner">
@@ -2339,30 +2337,32 @@
                                         </div>
                                     </div>
                                 </div>
+
                                 <div class="product-item">
                                     <div class="product-top equal-elem">
-                                        <span class="cat-list">Camera</span>
-                                        <h3 class="product-name"><a href="#">Blue Yeti USB Microphone Blackout Edition</a></h3>
+                                        <span class="cat-list">LENOVO</span>
+                                        <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <span>(0)</span>
+                                        </div>
+                                        <h3 class="product-name"><a href="#">Máy tính bảng Lenovo Phab 2</a></h3>
                                     </div>
                                     <div class="product-media">
                                         <figure>
                                             <a href="#">
-                                                <img alt="img" src="images/b19.jpg">
+                                                <img alt="img" class="thumb-item-product-imgs" src="images/imgs/lenovo-phab-2-0.png">
                                             </a>
                                         </figure>
                                         <a href="#" class="quick-view">quick view</a>
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">$495.00</span>
-                                            <div class="star-rating">
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <a href="#"><i class="fa fa-star-o"></i></a>
-                                                <span>(0)</span>
-                                            </div>
+                                            <span class="price">3.990.000 đ</span>
+                                            
                                         </div>
                                         <div class="group-btn-control">
                                             <div class="inner">
@@ -2373,6 +2373,44 @@
                                         </div>
                                     </div>
                                 </div>
+
+                                <div class="product-item">
+                                    <div class="product-top equal-elem">
+                                        <span class="cat-list">APPLE</span>
+                                        <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <a href="#"><i class="fa fa-star-o"></i></a>
+                                            <span>(0)</span>
+                                        </div>
+                                        <h3 class="product-name"><a href="#">Máy tính bảng iPad Mini 4 Wifi 128GB</a></h3>
+                                    </div>
+                                    <div class="product-media">
+                                        <figure>
+                                            <a href="#">
+                                                <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-mini-4-128-0.png">
+                                            </a>
+                                        </figure>
+                                        <a href="#" class="quick-view">quick view</a>
+                                    </div>
+                                    <div class="product-info">
+                                        <div class="product-content">
+                                            <span class="price">10.990.000 đ</span>
+                                            
+                                        </div>
+                                        <div class="group-btn-control">
+                                            <div class="inner">
+                                                <a href="#" class="compare button"><span class="arrow_left-right_alt"></span></a>
+                                                <a href="#" class="add_to_cart">Add to Cart</a>
+                                                <a href="#" class="button add_to_wishlist"><span class="icon_heart_alt"></span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+           
                             </div>
                         </div>
                     </div>
@@ -2778,6 +2816,7 @@
 <script type="text/javascript" src="js/jquery.plugin.js"></script>
 <script type="text/javascript" src="js/jquery.countdown.js"></script>
 <script type="text/javascript" src="js/frontend.min.js"></script>
+<script type="text/javascript" src='https://www.google.com/recaptcha/api.js'></script>
 </body>
 
 <!-- Mirrored from kute-themes.com/html/smartmarket/html/index4.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Apr 2018 03:11:42 GMT -->
