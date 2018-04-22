@@ -1151,6 +1151,7 @@ th, td {
 }
 .left-sidebar .col-content,
 .left-sidebar .content-area{
+    float:left;
 }
 
 .left-sidebar .detail-product-more{
@@ -3919,12 +3920,12 @@ blockquote span{
     transform: translateY(0%);
 }
 .content-sidebar .product-content-review .review-attributes th{
-    padding:10px 24px;
+    padding:15px 24px;
     width: 33.3%;
     font-weight: 500;
 }
 .content-sidebar .product-content-review .review-attributes td{
-    padding:10px 30px 10px 50px;
+    padding:15px 30px 15px 50px;
     color: blue;
 }
 .content-sidebar .product-content-review .title-comment-form:after{
@@ -7268,7 +7269,17 @@ blockquote span{
 .modal-lg{
     width: 1000px;
 }
+.modal-quickview{
+     width: 900px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: left;
 
+}
+.fix-modal-preview{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 .modal-content{
     border-radius: 0;
 }
