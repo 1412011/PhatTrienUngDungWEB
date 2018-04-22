@@ -2201,6 +2201,12 @@ blockquote span{
     border-bottom:none;
     margin-bottom: 0;
 }
+
+.recent-posts-list .info .star-rating{
+    float:left;
+    color: #fac451;
+}
+
 .widget-latest-post li{
     overflow: hidden;
     padding: 20px 15px 20px 20px;
@@ -2209,6 +2215,8 @@ blockquote span{
 .widget-latest-post .thumb{
     float: left;
     max-width: 80px;
+    width: 80px;
+    height: 80px;
     margin-right: 25px;
 }
 .widget-latest-post .info{
@@ -2222,6 +2230,8 @@ blockquote span{
     cursor: pointer;
     display: block;
     margin-bottom: 9px;
+    color: black !important;
+    height: 40px;
 }
 .widget-latest-post .info .price{
     color: #b7b7b7;
@@ -2232,6 +2242,12 @@ blockquote span{
     margin-right: 7px;
     text-decoration: none;
 }
+
+.recent-posts-list .info .add_to_cart{
+    border-radius: 50px;
+    margin-top: 5px;
+}
+
 .widget-latest-post .info .price del{
     font-size: 14px;
 }
@@ -2914,7 +2930,7 @@ blockquote span{
     border-bottom:1px solid transparent;
 }
 .price{
-    font-weight: 500;
+    font-weight: bold;
     display: inline-block;
 }
 .price del{
@@ -3618,7 +3634,7 @@ blockquote span{
     padding:45px 100px 50px 100px;
 }
 .product-content-review .box-content .title{
-    font-size: 30px;
+    font-size: 25px;
     color: #4c4c4c;
     line-height: 100%;
     margin-bottom: 17px;
@@ -3687,6 +3703,11 @@ blockquote span{
   padding: 8px 12px;
   position: absolute;
   top: 0;
+}
+.product-content-review .box-content .des-horzi-dot{
+    text-align: center;
+    margin-top:5px;
+    margin-bottom: 5px;
 }
 
 /* The dots/bullets/indicators */
@@ -3887,7 +3908,7 @@ blockquote span{
     width: 49.93%;
 }
 .content-sidebar .product-content-review .box-content{
-    padding: 30px;
+    padding: 30px 30px 10px 30px;
 }
 .content-sidebar .product-content-review .box-content .review-content{
     margin-left: 20px;
