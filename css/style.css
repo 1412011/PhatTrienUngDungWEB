@@ -1151,7 +1151,7 @@ th, td {
 }
 .left-sidebar .col-content,
 .left-sidebar .content-area{
-    float:left;
+    float:right;
 }
 
 .left-sidebar .detail-product-more{
@@ -6076,7 +6076,7 @@ blockquote span{
     -moz-transform: translate(0, 0);
     -o-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
+    transform: translate(0, 0); 
     visibility: visible;
     opacity: 1;
 }
