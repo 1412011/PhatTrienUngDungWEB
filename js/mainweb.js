@@ -29,6 +29,11 @@ $('document').ready(function(){
     $(this).parent().remove();
   });
 
+  $('a.remove-item-cart').on('click',function(){
+    $(this).parent().parent().remove();
+  });
+
+
   //only press number product cart 
   $('#quantity-cart,#text-onlynumber').on('keypress',function(e){
     

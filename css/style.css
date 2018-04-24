@@ -5055,6 +5055,7 @@ blockquote span{
 .product-cart .product-subtotal{
     width: 11%;
 }
+.remove-item-cart,
 .product-cart .product-remove .remove{
     font-size: 14px;
     color: #242627;
@@ -5079,6 +5080,11 @@ blockquote span{
 .btn-check:hover{
     color: #fff;
 }
+
+.remove-item-cart{
+
+}
+
 @media (max-width: 991px) {
     .product-cart td.product-thumbnail{
         padding-left: 10px;
