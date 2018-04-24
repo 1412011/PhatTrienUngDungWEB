@@ -741,7 +741,7 @@ iframe {
     max-width: 100% !important;
 }
 table {
-    border: 1px solid #e6e6e6;
+    border: 1px solid #4576ab;
     border-collapse: collapse;
     border-spacing: 0;
     table-layout: auto;
@@ -1427,7 +1427,8 @@ th, td {
 /*step-by-step*/
 .step-by-step{
     overflow: hidden;
-    margin-bottom: 38px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 .step-by-step ul{
     padding-left: 0;
@@ -1504,7 +1505,7 @@ th, td {
     font-size: 20px;
     color: #232530;
     text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
     font-weight: 500;
 }
 .step-by-step .items-step.active span{
@@ -1537,7 +1538,7 @@ th, td {
     display: inline-block;
     position: absolute;
     font-size: 48px;
-    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
     font-weight: 600;
     color: #2d2c40;
     right: 82px;
@@ -2343,7 +2344,6 @@ blockquote span{
     border-radius: 50%;
 }
 .button-price-slider{
-    font-family: 'Poppins', sans-serif;
     font-weight: 500;
     color: #fff;
     font-size: 13px;
@@ -4953,6 +4953,11 @@ blockquote span{
 .contact-form .message-comment{
     margin-bottom: 50px;
 }
+
+.magrin_bottom_20{
+    margin-bottom: 20px;
+}
+
 .contact-form .button-submit{
     font-size: 14px;
     font-weight: 400;
@@ -4984,7 +4989,7 @@ blockquote span{
 /*wishList*/
 .product-cart .shop-table{
     margin-bottom: 30px;
-    font-family: 'Poppins', sans-serif;
+   /* font-family: 'Poppins', sans-serif;*/
 }
 .product-cart th,
 .product-cart td{
@@ -4995,10 +5000,11 @@ blockquote span{
     text-align: center;
 }
 .product-cart td.product-thumbnail{
-    padding-left: 30px;
+    /*padding-left: 30px;*/
 }
-.product-cart .cart-item:first-child td.product-thumbnail{
-    padding-top: 30px;
+.product-cart .cart-item td.product-thumbnail{
+    padding-top: 10px;
+    text-align: center;
 }
 .product-cart .cart-item:last-child td.product-thumbnail{
     padding-bottom: 30px;
@@ -5025,10 +5031,16 @@ blockquote span{
 .product-cart .product-quantity{
     width: 16%;
 }
+
+.product-cart .thumb-item-cart{
+    width: 100px;
+    height: 100px;
+}
+
 .product-cart .product-quantity .quantity input{
-    padding: 4px 10px;
+    padding: 4px 2px;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+   /* font-family: 'Poppins', sans-serif;*/
     border: none;
 }
 .product-cart .product-quantity .quantity .sign {
@@ -5062,7 +5074,6 @@ blockquote span{
     display: inline-block;
     font-weight: 500;
     padding: 5px 41px;
-    font-family: 'Poppins', sans-serif;
     position: relative;
 }
 .btn-check:hover{
@@ -5108,15 +5119,25 @@ blockquote span{
 }
 /*shopping-cart*/
 .shipping-process .shop-table{
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
+
+.shipping-checkout{
+    margin-bottom: 20px;
+}
+
 .shipping-checkout .form-shipping{
     text-align: center;
-    border: 1px solid #ebebeb;
-    font-family: 'Poppins', sans-serif;
+    border: 1px solid #4576ab;
 }
+
+.fa-truck, .fa-ticket, .fa-money{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
 .form-shipping .title{
-    color: #232530;
+    color: white;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: 500;
