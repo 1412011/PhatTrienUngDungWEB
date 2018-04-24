@@ -5145,6 +5145,7 @@ blockquote span{
     border-bottom: 1px solid #ebebeb;
     padding: 18px 0;
     margin-bottom: 20px;
+    background-color: #4576ab;
 }
 .form-shipping .des{
     color: #646a7c;
@@ -5180,8 +5181,8 @@ blockquote span{
     text-transform: capitalize;
 }
 .btn-check.process{
-    color: #232530;
-    background: #fff;
+    color: white;
+    background: #ff4d4d;
     border: 2px solid #ebebeb;
     padding: 3px 41px;
     margin:6px 0 30px 0;
@@ -5213,7 +5214,7 @@ blockquote span{
 }
 .form-shipping .form-input input{
     border: none;
-    border-bottom: 1px solid #ebebeb;
+    border-bottom: 1px solid red;
 }
 @media (max-width: 1199px){
     .form-shipping .box-select select{
@@ -5256,7 +5257,7 @@ blockquote span{
 }
 /*order*/
 .order-form{
-    font-family: 'Poppins', sans-serif;
+   /* font-family: 'Poppins', sans-serif;*/
 }
 .order-form .message-return{
     color: #232530;
@@ -5266,7 +5267,7 @@ blockquote span{
     margin-left: 4px;
 }
 .box-form-order{
-    border: 1px solid #ebebeb;
+    border: 1px solid #4576ab;
 }
 .box-form-order.code{
     text-align: center;
@@ -5276,15 +5277,16 @@ blockquote span{
 }
 .box-form-order .title{
     text-transform: uppercase;
-    color: #232530;
+    color: white;
     text-align: center;
     font-weight: 500;
     padding: 15px 0;
     border-bottom: 1px solid #ebebeb;
     margin-bottom: 20px;
+    background-color: #4576ab;
 }
 .box-order-info .form-input{
-    margin-bottom: 20px;
+    margin-bottom: 2px;
 }
 .box-order-info .form-input label{
     font-size: 14px;
@@ -5298,8 +5300,8 @@ blockquote span{
 .box-order-info .form-input input,
 .box-order-info .form-input select{
     font-size: 14px;
-    color: #b3b7c8;
-    padding-left: 0;
+    color: black;
+    padding-left: 5px;
     height: 40px;
     border: none;
     width: 497px;
@@ -5461,7 +5463,7 @@ blockquote span{
     width: 25%;
     padding: 14px 5px;
     padding-left: 60px;
-    font-family: 'Poppins', sans-serif;
+   /* font-family: 'Poppins', sans-serif;*/
 }
 .product-compare .shop-table td{
     text-align: center;
@@ -5483,7 +5485,7 @@ blockquote span{
     color: #232530;
     display: inline-block;
     margin-bottom: 43px;
-    font-family: 'Poppins', sans-serif;
+    /*font-family: 'Poppins', sans-serif;*/
 }
 .product-compare .shop-table .star-rating{
     float: none;
