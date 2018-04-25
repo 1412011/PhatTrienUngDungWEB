@@ -284,13 +284,22 @@
                     <nav class="breadcrumb-trail breadcrumbs">
                         <ul class="trail-items">
                             <li class="trail-item trail-begin">
-                                <a href="#"><span>Home</span></a>
+                                <a href="index.html"><span>Home</span></a>
                             </li>
                             <li class="trail-item trail-begin">
-                                <a href="#"><span>Shop</span></a>
+                                <a href="shop-grid-3column.html"><span>Shop</span></a>
                             </li>
-                            <li class="trail-item trail-end">
-                                <span>Shopping Cart</span>
+                            <li class="trail-item trail-begin">
+                                <a href="shop-detail-accessories.html"><span>Product detail</span></a>
+                            </li>
+                            <li class="trail-item trail-begin">
+                                <a href="shopping-cart.html"><span>shop cart</span></a>
+                            </li>
+                            <li class="trail-item trail-begin">
+                                <a href="checkout.html"><span>Checkout</span></a>
+                            </li>
+                            <li class="trail-item trail-begin">
+                                <a href="order.html"><span>Order</span></a>
                             </li>
                         </ul>
                     </nav>
@@ -300,132 +309,68 @@
         <div class="container">
             <div class="step-by-step">
                 <ul class="list-step">
-                    <li class="items-step "><span><p>Shopping Cart</p></span></li>
-                    <li class="items-step "><span><p>CheckOut</p></span></li>
-                    <li class="items-step active"><span><p>Order Completed</p></span></li>
+                    <li class="items-step "><span><p>Giỏ hàng</p></span></li>
+                    <li class="items-step "><span><p>Địa chỉ</p></span></li>
+                    <li class="items-step active"><span><p>Thanh toán</p></span></li>
                 </ul>
             </div>
         </div>
         <div class="container">
             <div class="order-form">
-                <div class="message-return">Returning customer?<a href="#">Click here to login</a></div>
+                <div class="message-return red-text">* Thông tin thanh toán của bạn được đảm bảo an toàn tuyệt đối</div>
                 <div class="row">
                     <div class="col-md-8">
                         <div class="box-form-order">
-                            <div class="title">Billing Address</div>
+                            <div class="title">THÔNG TIN THANH TOÁN</div>
                             <div class="box-order-info address">
-                                <div class="form-input">
-                                    <label>COUNTRY *</label>
-                                    <select name="position">
-                                        <option value="position1"></option>
-                                        <option value="position1">USA</option>
-                                        <option value="position2">Korea</option>
-                                    </select>
-                                </div>
-                                <div class="form-input">
-                                    <label>FIRST NAME *</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="form-input">
-                                    <label>LAST NAME *</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="form-input">
-                                    <label>COMPANY NAME *</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="form-input">
-                                    <label>ADDRESS *</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="form-input">
-                                    <label>TOWN / CITY *</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="form-input">
-                                    <label>COUNTRY / STATES</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="form-input">
-                                    <label>POSTCODE / ZIP *</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="form-input">
-                                    <label>EMAIL ADDRESS *</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="form-input">
-                                    <label>PHONE *</label>
-                                    <input type="text" class="input-form">
-                                </div>
-                                <div class="box-content margin-top-40">
-                                    <div class="items-parent">
-                                        <div class="arrow-items">Create an account?</div>
-                                        <div class="children">
-                                            <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-input">
-                                    <label>ACCOUNT PASSWORD *</label>
-                                    <input type="text" class="input-form">
-                                </div>
+                                <label>Phương thức nhận hàng</label>
                                 <div class="box-content">
                                     <div class="items-parent">
-                                        <div class="arrow-items">Create an account?</div>
+                                        <div class="arrow-items">COD</div>
                                         <div class="children">
-                                            <p>Create an account by entering the information below. If you are a returning customer please login at the top of the page</p>
+                                            <div class="transfer-atm">
+                                                <p>Nhận hàng khi thanh toán</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="form-input">
-                                    <label>ORDER NOTES</label>
-                                    <textarea class="textarea-form" rows="1" ></textarea>
-                                </div>
+                                    <div class="items-parent">
+                                        <div class="arrow-items">Chuyển khoản ATM</div>
+                                        <div class="children">
+                                            <div class="transfer-atm">
+                                                <div class="message-return red-text">* Lưu ý</div>
+                                                <p>&#8594; Khi shop nhận được tiền chuyển khoản, sản phẩm mới được xuất kho</p>
+                                                <p>&#8594; Vui lòng chuyển khoản vào tài khoản ngân hàng của shop</p>
+                                                <ul class="margin-left-10">
+                                                    <li>ARGIBANK    : Nguyễn Hoàng Anh - STK: 6380 2010 0835 9</li>
+                                                    <li>Vietinbank  : Nguyễn Hoàng Anh - STK: 1080 0398 8368</li>
+                                                    <li>Sacombabank : Nguyễn Hoàng Anh - STK: 0200 0426 2498</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="items-parent">
+                                        <div class="arrow-items">Master Card, Visa, Discover</div>
+                                        <div class="children">
+                                            <div class="transfer-atm">
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="box-form-order code margin-bottom-30">
-                            <div class="title">Promotrional Code</div>
-                            <div class="box-order-info">
-                                <p class="des">Enter your coupon code if you have one</p>
-                                <div class="form-input">
-                                    <input type="text" placeholder="Coupon code" class="input-form">
-                                </div>
-                                <a href="#" class="btn-check process">SUBSCRIBE</a>
-                            </div>
-                        </div>
                         <div class="box-form-order order">
-                            <div class="title">Your Order</div>
+                            <div class="title">HÓA ĐƠN</div>
                             <div class="box-order-info">
-                                <div class="shipping-left">PRODUCT<span>TOTAL</span></div>
-                                <div class="shipping-left">combination  x 1<span class="price">$460.00</span></div>
-                                <div class="shipping-left">combination  x 1<span class="price">$460.00</span></div>
-                                <div class="shipping-left">Cart Subtotal<span class="price">$460.00</span></div>
-                                <div class="shipping-left">Shipping and Handling<span>Free Shipping</span></div>
-                                <div class="shipping-left">Order Total<span class="price">$460.00</span></div>
-                                <div class="box-content">
-                                    <div class="items-parent">
-                                        <div class="arrow-items">Create an account?</div>
-                                        <div class="children">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                    </div>
-                                    <div class="items-parent">
-                                        <div class="arrow-items">Cheque Payment</div>
-                                        <div class="children">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                    </div>
-                                    <div class="items-parent">
-                                        <div class="arrow-items">PayPal</div>
-                                        <div class="children">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adip elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <a href="#" class="btn-check process">place porder</a>
+                                <div class="shipping-left">TÊN SẢN PHẨM<span>GIÁ</span></div>
+                                <div class="shipping-left">SamSung S6  x 1<span class="price">12000000</span></div>
+                                <div class="shipping-left">Iphone 5s x 2<span class="price">5000000</span></div>
+                                <div class="shipping-left">Tổng tiền<span class="price">22000000</span></div>
+                                <div class="shipping-left">Phí vận chuyển<span>Miễn phí</span></div>
+                                <div class="shipping-left">Tổng thanh toán<span class="price">22000000</span></div>
+                                <a href="#" class="btn-check process">&#10095;&#10095; HOÀN TẤT</a>
                             </div>
                         </div>
                     </div>
@@ -435,16 +380,17 @@
         <div class="container">
             <div class="brand-slide">
                 <div class="owl-carousel nav-style-1" data-nav="false" data-autoplay="false" data-dots="false" data-loop="true" data-margin="0" data-responsive='{"0":{"items":2},"480":{"items":3},"640":{"items":4},"991":{"items":6}}'>
-                    <a href="#"><img src="images/brand1.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand2.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand3.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand4.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand5.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand6.jpg" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-apple.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-samsung.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-htc.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-sony.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-oppo.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-huawei.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-lenovo.png" alt="brand"></a>
                 </div>
             </div>
-        </div>
-    </div>
+        </div> 
+    </div> 
 </div>
 <footer class="footer footer-style-1">
     <div class="container">
