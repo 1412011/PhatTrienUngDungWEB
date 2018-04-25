@@ -1,0 +1,239 @@
+body {
+	font-family: Segoe UI;
+	font-size: 1em;
+	color: #000;
+}
+
+
+.pre-header {
+	width: 100%;
+	background-color: #f0f2f9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 5px 0;
+	transition: all 400ms ease;
+	z-index: 1000;
+}
+
+.pre-header-fixed {
+	width: 100%;
+	background-color: #f0f2f9;
+	position: fixed;
+	top: 0;
+	left: 0;
+	padding: 0;
+	transition: all 400ms ease;
+	z-index: 1000;
+}
+
+.header {
+	width: 100%;
+	/*background-color: rgba(20, 103, 193,1);*/
+	background-color: rgba(68,82,97,0.9);
+	box-shadow: 0px 0.5px 0px #fff;
+	position: fixed;
+	top: 34px;
+	left: 0;
+	padding: 5px 0;
+	transition: all 400ms ease;
+	z-index: 1000;
+}
+
+.header-fixed {
+	width: 100%;
+	/*background-color: rgba(20, 103, 193,1);*/
+	background-color: rgba(68,82,97,0.9);
+	box-shadow: 0px 0.5px 0px #fff;
+	position: fixed;
+	top: 24px;
+	left: 0;
+	padding: 5px 0;
+	transition: all 400ms ease;
+	z-index: 1000;
+}
+
+/*#container {
+	position: relative;
+	color: #fff;
+	top: 60px;
+}*/
+
+.NavBar {
+	display: flex;
+	padding: 10px 0;
+	margin: 0;
+	transition: all 400ms ease;
+}
+
+.logoBox {
+	text-align: right;
+	padding: 0;
+}
+
+.AnhLogo {
+	width: 55px;
+	transition: all 400ms ease;
+}
+
+.NavBar a {
+	font-family: Segoe UI Light;
+	text-decoration: none;
+	color: #d0d0d0;
+	font-size: 20px;
+	margin: 0 25px;
+	font-weight: bold;
+}
+
+.NavBar-fixed a {
+	font-family: Segoe UI Light;
+	text-decoration: none;
+	color: #d0d0d0;
+	font-size: 20px;
+	margin: 0 25px;
+	font-weight: bold;
+}
+
+.NavBar li {
+	list-style: none;
+}
+
+.NavBar-fixed li {
+	list-style: none;
+}
+
+.Menu {
+	padding: 6px 0;
+}
+
+.NavbarSearch {
+	padding: 6px 0;
+	transition: all 400ms ease;
+}
+
+.NavBar a:hover {
+	color: #fff;
+}
+
+.NavBar-fixed a:hover {
+	color: #fff;
+}
+
+.NavbarSearch-fixed {
+	padding: 0;
+	transition: all 400ms ease;
+}
+
+.AnhLogo-fixed {
+	margin-right: 20px;
+	width: 40px;
+	transition: all 400ms ease;
+}
+
+.NavBar-fixed {
+	display: flex;
+	padding: 0;
+	margin: 0;
+	transition: all 400ms ease;
+}
+
+
+/*.Background {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	filter: brightness(70%);
+}*/
+
+.footer {
+	background-color: rgba(21,25,29,0.9);
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	position: relative;
+	top: 37px;
+}
+
+.phright a:hover {
+	text-decoration: none;
+}
+
+.phright-fixed a:hover {
+	text-decoration: none;
+}
+
+/*.myRow {
+	height: 590px;
+}*/
+
+/*.sticky .mb-3 {
+	margin-left: 80px;
+}*/
+
+/*#container h1 {
+	font-size: 4.5rem;
+	
+	text-align: center;
+}*/
+
+/*.welcome {
+	margin-top: 170px;
+}
+
+.aboutUS {
+	margin-top: 100px;
+}*/
+
+/*#container h3, h4 {
+	text-align: center;
+	margin: 10px 0;
+}*/
+
+/*hr {
+	display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 0 auto;
+}*/
+
+/*.avatar {
+	width: 150px;
+	margin: 50px;
+}
+
+.avatar img {
+	border: 2px solid #fff;
+	filter: grayscale(100%);
+	border-radius:50%;
+}
+
+.avatar img:hover {
+	filter: grayscale(0%);
+	transform: scale(1.5);
+	transition: all 400ms ease;
+	border: 3px solid #ffc107;
+}*/
+
+/*.bg-warning {
+	background-color: #dd7346 !important;
+}*/
+
+/*.sticky {
+	margin-top: 60px;
+}
+
+.sticky .card {
+	color: #fff;
+}*/
+
+/*.card {
+	top: 50px;
+	color: #000;
+	margin-left: 20px;
+}*/
+
+/*.DanhMuc {
+	font-size: 22px;
+	margin: 40px;
+}*/
