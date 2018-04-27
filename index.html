@@ -26,12 +26,12 @@
     <div class="header-top full-width">
         <div class="container">
             <div class="top-bar-left">
-                <div class="header-sale">SHOP EVENTS & SAVE UP TO <span>65% OFF!</span></div>
-                <div class="header-contact">Call Us: <span>001-1234-88888</span></div>
+                <div class="header-sale">Sự kiện store giảm giá sốc <span>đến 65% OFF!</span></div>
+                <div class="header-contact">Gọi cho chúng tôi: <span>0981 333 497</span></div>
             </div>
             <div class="top-bar-right">
                 <div class="switcher-current">
-                    <a href="#" class="switcher-item">Dollar (US)</a>
+                    <a href="#" class="switcher-item">VietNamDong (VND)</a>
                     <ul class="submenu">
                         <li class="menu-item"><a href="#" class="switcher-item">Dollar (US)</a></li>
                         <li class="menu-item"><a href="#" class="switcher-item">VietNamDong (VND)</a></li>
@@ -108,10 +108,12 @@
                 </ul>
             </div>
             <div class="box-items-right">
-                <a data-toggle="modal" href="#modal-login" class="">Register / log in</a>
+                <a data-toggle="modal" href="#modal-login" class="">Đăng nhập</a>
+                <label> / </label>
+                <a data-toggle="modal" href="#modal-register" class="">Đăng ký</a>
             </div>
         </div>
-        
+         
          <!-- modal Login -->
         <div class="container">
             <!-- Modal -->
@@ -138,7 +140,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div> -->
 
-                                    <div class="checkbox">
+                                    <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Ghi nhớ</label>
                                     </div>
                                     <p class="form-submit">
@@ -204,13 +206,12 @@
             <div class="vertical-menu">
                 <div class="block-title">
                     <i class="fa fa-bars"></i>
-                    <span class="text">all Departments</span>
+                    <span class="text">Tất cả danh mục</span>
                 </div>
                 <div class="vertical-menu-content">
                     <ul class="vertical-menu-items">
                         <li class="menu-item"><a href="#"><i class="fa fa-mobile"></i>Điện thoại</a></li>
                         <li class="menu-item"><a href="#"><i class="fa fa-tablet"></i>Máy tính bảng</a></li>
-                        <li class="menu-item"><a href="#"><i class="fa fa-tablet"></i>Sản phẩm cũ</a></li>
                     </ul>
                 </div>
             </div>
@@ -227,7 +228,7 @@
                             <option value="Blackberry">Blackberry</option>
                         </select>
                     </div>
-                    <input type="text" placeholder="What do you need?">
+                    <input type="text" placeholder="Bạn cần tìm gì?">
                     <button class="button-search">TÌM KIẾM</button>
                 </form>
             </div>
@@ -243,21 +244,26 @@
                         <a href="#">
                             <span class="icon icon_bag_alt"></span>
                             <span class="count">1</span>
-                            <span class="total">$180.00</span>
+                            <span class="total">10 000 000 đ</span>
                         </a>
                         <div class="mini-cart-content">
                             <ul class="items">
                                 <li class="item">
                                     <a href="#" class="product-media"><img src="images/mn1.jpg" alt="img"></a>
                                     <div class="product-info">
-                                        <div class="price">$460.00 x 1</div>
-                                        <div class="product-name"><a href="#">Kabino Bedside Table</a></div>
+                                        <div class="price">
+                                            <label class="unit-price">10 000 000đ</label>
+                                            <label class="lable-mulx-minicart" style="color: #000;">x</label>                            
+                                            <a href="javascript:;" class="sign minus"><i class="fa fa-minus"></i></a>
+                                            <label class="quantity-mini-cart">1</label>                       
+                                            <a href="javascript:;" class="sign plus"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                        <div class="product-name"><a href="#">OPPO F7 128 GB</a></div>
                                     </div>
-                                    <a href="javascript:;" class="remove">x</a>
+                                    <a href="javascript:;" class="remove-li">x</a>
                                 </li> 
-                                
                             </ul>
-                            <div class="subtotal">total:<span>$460.00</span></div>
+                            <div class="subtotal">Tổng<span>10 000 000 đ</span></div>
                             <div class="actions">
                                 <a href="shopping-cart.html" class="btn-process">XEM GIỎ HÀNG</a>
                                 <a href="checkout.html" class="btn-process btn-checkout">THANH TOÁN</a>
@@ -281,7 +287,7 @@
         <div class="container">
             <div id="seciton1">
                 <div class="box-slider opt-4">
-                    <div class="owl-carousel nav-style-1" data-nav="false" data-autoplay="false" data-dots="false" data-loop="true" data-margin="40" data-responsive='{"0":{"items":1},"480":{"items":1},"640":{"items":1},"991":{"items":1}}'>
+                    <div class="owl-carousel nav-style-1" data-nav="false" data-autoplay="true" data-dots="true" data-loop="true" data-margin="40" data-responsive='{"0":{"items":1},"480":{"items":1},"640":{"items":1},"991":{"items":1}}'>
                         <div class="item-slide item-1">
                             <div class="content-slider">
                                 <div class="m-text">New Tech</div>
@@ -408,12 +414,15 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ip-x-w-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>34.790.000 đ</ins>
+                                                            <ins>34 790 000 đ</ins>
                                                             <del></del>
                                                         </span>
                                                     </div>
@@ -446,11 +455,14 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ss-tab-a6-7in-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">3.590.000 đ</span>
+                                                        <span class="price">3 590 000 đ</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -481,11 +493,14 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ss-note-8-b-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">22.490.000 đ</span>
+                                                        <span class="price">22 490 000 đ</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -521,11 +536,14 @@
                                                     <div class="flash">
                                                         <span class="onnew">new</span>
                                                     </div>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">4.490.000 ₫</span>
+                                                        <span class="price">4 490 000 ₫</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -559,12 +577,15 @@
                                                     <div class="flash">
                                                         <span class="onnew">new</span>
                                                     </div>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>17.990.000 đ</ins>
+                                                            <ins>17 990 000 đ</ins>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -599,13 +620,16 @@
                                                     <div class="flash">
                                                         <span class="onnew">new</span>
                                                     </div>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>28.290.000 đ</ins>
-                                                            <del>28.790.000 đ</del>
+                                                            <ins>28 290 000 đ</ins>
+                                                            <del>28 790 000 đ</del>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -639,6 +663,9 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-mini-4-128-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <div class="flash sale">
                                                         <span class="onsale">-10%</span>
                                                     </div>
@@ -647,8 +674,8 @@
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>9.890.000 đ</ins>
-                                                            <del>10.990.000 đ</del>
+                                                            <ins>9 890 000 đ</ins>
+                                                            <del>10 990 000 đ</del>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -680,6 +707,9 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/sony-xz1-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <div class="flash sale">
                                                         <span class="onsale">-5%</span>
                                                     </div>
@@ -688,8 +718,8 @@
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>13.290.000 đ</ins>
-                                                            <del>13.990.000 đ</del>
+                                                            <ins>13 290 000 đ</ins>
+                                                            <del>13 990 000 đ</del>
 
                                                         </span>
                                                     </div>
@@ -722,12 +752,15 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/htc-one-a9s-w-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>2.790.000</ins>
+                                                            <ins>2 790 000</ins>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -761,11 +794,14 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/htc-u-ultra-b-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">9.890.000 đ</span>
+                                                        <span class="price">9 890 000 đ</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -796,11 +832,14 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/sony-xz-premium-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">15.990.000 đ</span>
+                                                        <span class="price">15 990 000 đ</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -831,11 +870,14 @@
                                                             <img alt="img" class="thumb-item-product-imgs" src="images/imgs/hw-pad-t1-701u-0.png">
                                                         </a>
                                                     </figure>
+                                                    <div class="flash">
+                                                        <span class="onnew">new</span>
+                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">2.090.000 đ</span>
+                                                        <span class="price">2 090 000 đ</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -857,19 +899,19 @@
                                                 <div class="product-top equal-elem">
                                                     <span class="cat-list">APPLE</span>
                                                     <div class="star-rating">
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
                                                         <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <span>(0)</span>
+                                                        <span>(4)</span>
                                                     </div>
-                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">IPhone X</a></h3>
+                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại iPhone 6s 128GB</a></h3>
                                                 </div>
                                                 <div class="product-media">
                                                     <figure>
                                                         <a href="shop-detail-accessories.html" >
-                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ip-x-w-0.png">
+                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ip-6s-128-p-0.png">
                                                         </a>
                                                     </figure>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
@@ -877,7 +919,7 @@
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>34.790.000 đ</ins>
+                                                            <ins>16 690 000 đ</ins>
                                                             <del></del>
                                                         </span>
                                                     </div>
@@ -893,28 +935,28 @@
 
                                             <div class="product-item margin-bottom-30">
                                                 <div class="product-top equal-elem">
-                                                    <span class="cat-list">SAMSUNG</span>
+                                                    <span class="cat-list">APPLE</span>
                                                     <div class="star-rating">
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <span>(0)</span>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star-half-o"></i></a>
+                                                        <span>(4.5)</span>
                                                     </div>
-                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Máy tính bảng Samsung Galaxy Tab A6 7.0"</a></h3>
+                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại iPhone 7 Plus 128GB</a></h3>
                                                 </div>
                                                 <div class="product-media">
                                                     <figure>
                                                         <a href="shop-detail-accessories.html">
-                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ss-tab-a6-7in-0.png">
+                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ip-7-plus-128gb-0.png">
                                                         </a>
                                                     </figure>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">3.590.000 đ</span>
+                                                        <span class="price">22 990 000 đ</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -930,14 +972,14 @@
                                                 <div class="product-top equal-elem">
                                                     <span class="cat-list">SAMSUNG</span>
                                                     <div class="star-rating">
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star-half-o"></i></a>
                                                         <a href="#"><i class="fa fa-star-o"></i></a>
                                                         <span>(0)</span>
                                                     </div>
-                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Samsung Galaxy Note 8 64GB</a></h3>
+                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại Nokia 7 plus</a></h3>
                                                 </div>
                                                 <div class="product-media">
                                                     <figure>
@@ -949,7 +991,7 @@
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">22.490.000 đ</span>
+                                                        <span class="price">8 890 000 đ</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -974,22 +1016,19 @@
                                                         <a href="#"><i class="fa fa-star-o"></i></a>
                                                         <span>(0)</span>
                                                     </div>
-                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại HTC 10 evo</a></h3>
+                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại OPPO F7 128GB RED</a></h3>
                                                 </div>
                                                 <div class="product-media">
                                                     <figure>
                                                         <a href="shop-detail-accessories.html">
-                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/htc-10-evo-0.png">
+                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/oppo-f7-128-0.jpg">
                                                         </a>
                                                     </figure>
-                                                    <div class="flash">
-                                                        <span class="onnew">new</span>
-                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
-                                                        <span class="price">4.490.000 ₫</span>
+                                                        <span class="price">9 990 000 đ</span>
                                                     </div>
                                                     <div class="group-btn-control">
                                                         <div class="inner">
@@ -1028,7 +1067,7 @@
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>17.990.000 đ</ins>
+                                                            <ins>17 990 000 đ</ins>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -1052,24 +1091,21 @@
                                                         <a href="#"><i class="fa fa-star-o"></i></a>
                                                         <span>(0)</span>
                                                     </div>
-                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại iPhone 8 Plus 256GB</a></h3>
+                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Máy tính bảng iPad Pro 10.5 inch Wifi 64GB (2017)</a></h3>
                                                 </div>
                                                 <div class="product-media">
                                                     <figure>
                                                         <a href="shop-detail-accessories.html">
-                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ip-8-plus-256-0.png">
+                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-pro-2017-0.png">
                                                         </a>
                                                     </figure>
-                                                    <div class="flash">
-                                                        <span class="onnew">new</span>
-                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>28.290.000 đ</ins>
-                                                            <del>28.790.000 đ</del>
+                                                            <ins>16 990 000 đ</ins>
+                                                            <del>18 590 000 đ</del>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -1086,33 +1122,29 @@
                                         <div class="owl-one-row">
                                             <div class="product-item margin-bottom-30">
                                                 <div class="product-top equal-elem">
-                                                    <span class="cat-list">APPLE</span>
+                                                    <span class="cat-list">HTC</span>
                                                     <div class="star-rating">
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
                                                         <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <span>(0)</span>
+                                                        <span>(4)</span>
                                                     </div>
-                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Máy tính bảng iPad Mini 4 Wifi 128GB</a></h3>
+                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại HTC 10 evo</a></h3>
                                                 </div>
                                                 <div class="product-media">
                                                     <figure>
                                                         <a href="shop-detail-accessories.html">
-                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-mini-4-128-0.png">
+                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/htc-10-evo-0.png">
                                                         </a>
                                                     </figure>
-                                                    <div class="flash sale">
-                                                        <span class="onsale">-10%</span>
-                                                    </div>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
                                                 </div>
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>9.890.000 đ</ins>
-                                                            <del>10.990.000 đ</del>
+                                                            <ins>4 490 000 đ</ins>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -1136,12 +1168,12 @@
                                                         <a href="#"><i class="fa fa-star-o"></i></a>
                                                         <span>(0)</span>
                                                     </div>
-                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại Sony Xperia XZ1</a></h3>
+                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại HTC U Ultra</a></h3>
                                                 </div>
                                                 <div class="product-media">
                                                     <figure>
                                                         <a href="shop-detail-accessories.html">
-                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/sony-xz1-0.png">
+                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/htc-u-ultra-b-0.png">
                                                         </a>
                                                     </figure>
                                                     <div class="flash sale">
@@ -1152,9 +1184,8 @@
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>13.290.000 đ</ins>
-                                                            <del>13.990.000 đ</del>
-
+                                                            <ins>9 490 000 đ</ins>
+                                                            <del>9 990 000 đ</del>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -1171,19 +1202,19 @@
                                                 <div class="product-top equal-elem">
                                                     <span class="cat-list">HTC</span>
                                                     <div class="star-rating">
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <span>(0)</span>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <span>(5)</span>
                                                     </div>
-                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại HTC One A9s</a></h3>
+                                                    <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại Sony Xperia XZs</a></h3>
                                                 </div>
                                                 <div class="product-media">
                                                     <figure>
                                                         <a href="shop-detail-accessories.html">
-                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/htc-one-a9s-w-0.png">
+                                                            <img alt="img" class="thumb-item-product-imgs" src="images/imgs/sony-xzs-0.png">
                                                         </a>
                                                     </figure>
                                                     <a data-toggle="modal" href="#modal-quickview" class="quick-view">Xem nhanh</a>
@@ -1191,7 +1222,7 @@
                                                 <div class="product-info">
                                                     <div class="product-content">
                                                         <span class="price">
-                                                            <ins>2.790.000</ins>
+                                                            <ins>9 990 000 đ</ins>
                                                         </span>
                                                     </div>
                                                     <div class="group-btn-control">
@@ -1745,12 +1776,12 @@
                                                 <div class="product-top equal-elem">
                                                     <span class="cat-list">HUAWEI</span>
                                                     <div class="star-rating">
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star"></i></a>
+                                                        <a href="#"><i class="fa fa-star-half-o"></i></a>
                                                         <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                                        <span>(0)</span>
+                                                        <span>(3.5)</span>
                                                     </div>
                                                     <h3 class="product-name"><a href="shop-detail-accessories.html">Máy tính bảng Huawei MediaPad T1-701u</a></h3>
                                                 </div>
@@ -1801,12 +1832,12 @@
                                     <div class="product-top equal-elem">
                                         <span class="cat-list">APPLE</span>
                                         <div class="star-rating">
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <span>(0)</span>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <span>(5)</span>
                                         </div>
                                         <h3 class="product-name"><a href="shop-detail-accessories.html">Apple IPHONE X 256GB</a></h3>
                                     </div>
@@ -1837,12 +1868,12 @@
                                     <div class="product-top equal-elem">
                                         <span class="cat-list">SAMSUNG</span>
                                         <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <span>(0)</span>
+                                            <span>(3)</span>
                                         </div>
                                         <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại Samsung Galaxy S9+ 128GB</a></h3>
                                     </div>
@@ -1873,12 +1904,12 @@
                                     <div class="product-top equal-elem">
                                         <span class="cat-list">SAMSUNG</span>
                                         <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star-half-o"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <span>(0)</span>
+                                            <span>(2.5)</span>
                                         </div>
                                         <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại Samsung Galaxy Note 8</a></h3>
                                     </div>
@@ -1909,12 +1940,12 @@
                                     <div class="product-top equal-elem">
                                         <span class="cat-list">OPPO</span>
                                         <div class="star-rating">
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <span>(0)</span>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <span>(5)</span>
                                         </div>
                                         <h3 class="product-name"><a href="shop-detail-accessories.html">OPPO F7 128GB</a></h3>
                                     </div>
@@ -1945,12 +1976,12 @@
                                     <div class="product-top equal-elem">
                                         <span class="cat-list">NOKIA</span>
                                         <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star-half-o"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <span>(0)</span>
+                                            <span>(4.5)</span>
                                         </div>
                                         <h3 class="product-name"><a href="shop-detail-accessories.html">Điện thoại Nokia 8</a></h3>
                                     </div>
@@ -1964,7 +1995,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">12.990.000 đ</span>
+                                            <span class="price">12 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2000,7 +2031,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">9.990.000 đ</span>
+                                            <span class="price">9 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2036,7 +2067,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">11.990.000 đ</span>
+                                            <span class="price">11 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2072,7 +2103,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">15.990.000 đ</span>
+                                            <span class="price">15 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2114,7 +2145,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">19.990.000 đ</span>
+                                            <span class="price">19 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2134,9 +2165,9 @@
                                             <a href="#"><i class="fa fa-star-o"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <span>(0)</span>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <span>(3)</span>
                                         </div>
                                         <h3 class="product-name"><a href="shop-detail-accessories.html">Máy tính bảng Samsung Galaxy Tab A6 10.1 Spen</a></h3>
                                     </div>
@@ -2150,7 +2181,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">7.990.000 đ</span>
+                                            <span class="price">7 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2167,12 +2198,12 @@
                                     <div class="product-top equal-elem">
                                         <span class="cat-list">APPLE</span>
                                         <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <span>(0)</span>
+                                            <span>(4)</span>
                                         </div>
                                         <h3 class="product-name"><a href="shop-detail-accessories.html">Máy tính bảng iPad Air 2 Cellular 128GB</a></h3>
                                     </div>
@@ -2186,7 +2217,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">15.490.000 đ</span>
+                                            <span class="price">15 490 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2203,12 +2234,12 @@
                                     <div class="product-top equal-elem">
                                         <span class="cat-list">HUAWEI</span>
                                         <div class="star-rating">
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
+                                            <a href="#"><i class="fa fa-star"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
                                             <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <a href="#"><i class="fa fa-star-o"></i></a>
-                                            <span>(0)</span>
+                                            <span>(3)</span>
                                         </div>
                                         <h3 class="product-name"><a href="shop-detail-accessories.html">Máy tính bảng Huawei MediaPad M3 8.0 (2017)</a></h3>
                                     </div>
@@ -2222,7 +2253,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">5.990.000 đ</span>
+                                            <span class="price">5 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2258,7 +2289,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">3.990.000 đ</span>
+                                            <span class="price">3 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2294,7 +2325,7 @@
                                     </div>
                                     <div class="product-info">
                                         <div class="product-content">
-                                            <span class="price">10.990.000 đ</span>
+                                            <span class="price">10 990 000 đ</span>
                                             
                                         </div>
                                         <div class="group-btn-control">
@@ -2358,7 +2389,7 @@
                                                     <div class="row r-price">
                                                         <span class="price">
                                                             <del></del>
-                                                            <ins>34.790.000₫</ins>
+                                                            <ins>34 790 000 đ</ins>
                                                         </span>
                                                     </div>
                                                     <div class="row seclect-color">
@@ -2423,11 +2454,11 @@
                         <figure><a href="#"><img alt="" src="images/banner-3-1.jpg"></a></figure>
                         <div class="banner-content">
                             <div class="price">
-                                <ins>$645.00</ins>
-                                <del>759.99</del>
+                                <ins>5 490 000 đ</ins>
+                                <del>7 590 000 đ</del>
                             </div>
-                            <span class="text">Sale Up To <br><span>25% Off</span> Robotic</span>
-                            <a href="#" class="banner-link">buy now</a>
+                            <span class="text">Sale Up To <br><span>25% Off</span> Điện thoại siêu cấp</span>
+                            <a href="#" class="banner-link">Mua ngay</a>
                         </div>
                     </div>
                 </div>
@@ -2436,262 +2467,15 @@
                         <figure><a href="#"><img alt="" src="images/banner-3-2.jpg"></a></figure>
                         <div class="banner-content">
                             <div class="price">
-                                <ins>$645.00</ins>
-                                <del>759.99</del>
+                                <ins>15 490 000 đ</ins>
+                                <del>19 480 900 đ</del>
                             </div>
-                            <span class="text">Extra <span>30% Off</span> <br>All Sale Style</span>
-                            <a href="#" class="banner-link">buy now</a>
+                            <span class="text">Extra <span>Giảm 30%</span> <br>Cơ hội duy nhất trong năm</span>
+                            <a href="#" class="banner-link">Mua ngay</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <section id="section6" class="margin-bottom-5">
-                <div class="title-head">
-                    <h3 class="title-block">Recently Viewed Products</h3>
-                </div>
-                <div class="owl-carousel nav-style-1" data-nav="true" data-autoplay="false" data-dots="false" data-loop="true" data-margin="30" data-responsive='{"0":{"items":1},"500":{"items":1},"640":{"items":1},"768":{"items":2},"992":{"items":2},"1199":{"items":3},"1366":{"items":3},"1620":{"items":3}}'>
-                    <div class="owl-one-row">
-                        <div class="product-item style3 margin-bottom-30">
-                            <div class="product-media">
-                                <figure>
-                                    <a href="#">
-                                        <img alt="img" src="images/r5.jpg">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-top equal-elem">
-                                    <span class="cat-list">Camera</span>
-                                    <h3 class="product-name"><a href="#">Vantech VP-153C Camera</a></h3>
-                                </div>
-                                <div class="product-content">
-                                    <div class="star-rating">
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <span>(0)</span>
-                                    </div>
-                                </div>
-                                <span class="price">
-                                    <del>229.99</del>
-                                    <ins>$195.00</ins>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product-item style3">
-                            <div class="product-media">
-                                <figure>
-                                    <a href="#">
-                                        <img alt="img" src="images/r8.jpg">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-top equal-elem">
-                                    <span class="cat-list">Camera</span>
-                                    <h3 class="product-name"><a href="#">Vantech VP-153C Camera</a></h3>
-                                </div>
-                                <div class="product-content">
-                                    <div class="star-rating">
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <span>(0)</span>
-                                    </div>
-                                </div>
-                                <span class="price">
-                                    <del>229.99</del>
-                                    <ins>$195.00</ins>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-one-row">
-                        <div class="product-item style3 margin-bottom-30">
-                            <div class="product-media">
-                                <figure>
-                                    <a href="#">
-                                        <img alt="img" src="images/r6.jpg">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-top equal-elem">
-                                    <span class="cat-list">Camera</span>
-                                    <h3 class="product-name"><a href="#">Vantech VP-153C Camera</a></h3>
-                                </div>
-                                <div class="product-content">
-                                    <div class="star-rating">
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <span>(0)</span>
-                                    </div>
-                                </div>
-                                <span class="price">
-                                    <del>229.99</del>
-                                    <ins>$195.00</ins>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product-item style3">
-                            <div class="product-media">
-                                <figure>
-                                    <a href="#">
-                                        <img alt="img" src="images/r9.jpg">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-top equal-elem">
-                                    <span class="cat-list">Camera</span>
-                                    <h3 class="product-name"><a href="#">Vantech VP-153C Camera</a></h3>
-                                </div>
-                                <div class="product-content">
-                                    <div class="star-rating">
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <span>(0)</span>
-                                    </div>
-                                </div>
-                                <span class="price">
-                                    <del>229.99</del>
-                                    <ins>$195.00</ins>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-one-row">
-                        <div class="product-item style3 margin-bottom-30">
-                            <div class="product-media">
-                                <figure>
-                                    <a href="#">
-                                        <img alt="img" src="images/r7.jpg">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-top equal-elem">
-                                    <span class="cat-list">Camera</span>
-                                    <h3 class="product-name"><a href="#">Vantech VP-153C Camera</a></h3>
-                                </div>
-                                <div class="product-content">
-                                    <div class="star-rating">
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <span>(0)</span>
-                                    </div>
-                                </div>
-                                <span class="price">
-                                    <del>229.99</del>
-                                    <ins>$195.00</ins>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product-item style3">
-                            <div class="product-media">
-                                <figure>
-                                    <a href="#">
-                                        <img alt="img" src="images/r10.jpg">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-top equal-elem">
-                                    <span class="cat-list">Camera</span>
-                                    <h3 class="product-name"><a href="#">Vantech VP-153C Camera</a></h3>
-                                </div>
-                                <div class="product-content">
-                                    <div class="star-rating">
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <span>(0)</span>
-                                    </div>
-                                </div>
-                                <span class="price">
-                                    <del>229.99</del>
-                                    <ins>$195.00</ins>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="owl-one-row">
-                        <div class="product-item style3 margin-bottom-30">
-                            <div class="product-media">
-                                <figure>
-                                    <a href="#">
-                                        <img alt="img" src="images/r5.jpg">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-top equal-elem">
-                                    <span class="cat-list">Camera</span>
-                                    <h3 class="product-name"><a href="#">Vantech VP-153C Camera</a></h3>
-                                </div>
-                                <div class="product-content">
-                                    <div class="star-rating">
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <span>(0)</span>
-                                    </div>
-                                </div>
-                                <span class="price">
-                                    <del>229.99</del>
-                                    <ins>$195.00</ins>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product-item style3">
-                            <div class="product-media">
-                                <figure>
-                                    <a href="#">
-                                        <img alt="img" src="images/r8.jpg">
-                                    </a>
-                                </figure>
-                            </div>
-                            <div class="product-info">
-                                <div class="product-top equal-elem">
-                                    <span class="cat-list">Camera</span>
-                                    <h3 class="product-name"><a href="#">Vantech VP-153C Camera</a></h3>
-                                </div>
-                                <div class="product-content">
-                                    <div class="star-rating">
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <a href="#"><i class="fa fa-star-o"></i></a>
-                                        <span>(0)</span>
-                                    </div>
-                                </div>
-                                <span class="price">
-                                    <del>229.99</del>
-                                    <ins>$195.00</ins>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
         </div>
         <div class="container">
             <div class="brand-slide">

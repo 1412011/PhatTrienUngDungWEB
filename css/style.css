@@ -552,6 +552,7 @@ body {
 }
 label {
     font-weight: normal;
+    font-size: 15px;
 }
 label .required {
     border-bottom: none;
@@ -833,6 +834,9 @@ th, td {
 }
 .margin-bottom-100{
     margin-bottom: 100px;
+}
+.form-group{
+    margin-bottom: 0px !important;
 }
 /*OWL*/
 .owl-carousel .owl-dots.disabled,
@@ -2284,7 +2288,7 @@ blockquote span{
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 0;
-    line-height: 100%;
+    /*line-height: 100%;*/
 }
 .widget-html .info span,
 .box-html-content .info span{
@@ -2962,6 +2966,18 @@ blockquote span{
     font-size: 13px;
     letter-spacing: -1px;
     margin: 10px 0px;
+}
+.lable-mulx-minicart{
+    font-weight: bold;
+    margin:0px 5px;
+}
+.quantity-mini-cart{
+    font-weight: bold;
+}
+.fa-plus, .fa-minus{
+    font-size: 11px;
+    font-weight: 500;
+    padding: 5px;
 }
 .star-rating a:hover{
     color: inherit;
@@ -5304,6 +5320,9 @@ blockquote span{
     margin-bottom: 2px;
 }
 
+.box-order-info .address-lable{
+    color: #000;
+}
 .box-order-info .form-input label{
     font-size: 11px;
     text-transform: uppercase;
@@ -5313,12 +5332,9 @@ blockquote span{
     line-height: 100%;
     vertical-align: bottom;
 }
-
-
 .box-order-info .form-input input,
 .box-order-info .form-input select{
-    font-size: 16px;
-    color: black;
+    font-size: 15px;
     padding-left: 5px;
     height: 40px;
     border: none;
@@ -5327,8 +5343,12 @@ blockquote span{
     font-weight: bold;
     color: #4576ab;
 }
-
-
+.order-form .info-order-complete{
+    font-weight: bold;
+    color: #4576ab;
+    font-size: 15px;
+}
+.address-lable,
 .box-order-info .form-input .atm-lable{
     font-size: 16px;
     margin-top: 20px;
@@ -5351,11 +5371,20 @@ blockquote span{
     margin-bottom: 10px;
     font-weight: bold;
     color: #4576ab;
+    padding-left: 5px;
 }
 .box-order-info .form-input select{
     background-image: url(../images/arrow-select2.jpg);
     background-repeat: no-repeat;
     background-position: center right;
+}
+
+.box-order-info .change-info{
+    font-style: italic;
+    text-decoration: underline dotted;
+    font-size: 14px;
+    color: blue;
+    float: right;
 }
 
 .order-form .arrow-items{
@@ -5391,7 +5420,6 @@ blockquote span{
     position: absolute;
     z-index: 1;
 }
-
 .transfer-atm{
     padding-left: 20px; 
 }
@@ -5409,12 +5437,9 @@ blockquote span{
     font-size: 80%;
     color: #dc3545;
 }
-
 .invalid-feedback:after,.invalid-feedback:before{
     box-sizing: border-box;
 }
-
-
 
 .transfer-atm .message-return{
     margin-bottom: 2px;
@@ -5467,7 +5492,7 @@ blockquote span{
 }
 .box-form-order.order .shipping-left{
     color: #646a7c;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 100;
     border-bottom: 1px solid #ebebeb;
     padding-bottom: 3px;
@@ -5483,13 +5508,14 @@ blockquote span{
     border:1px solid #ebebeb;
     padding: 20px;
 }
+.box-order-info .btn-check.process,
 .order-form .box-form-order.order .btn-check.process{
     text-align: center;
     margin: 0 auto;
     display: inherit;
     max-width: 250px;
-    margin-top: 52px;
-    margin-bottom: 74px;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
 @media (max-width: 1199px) {
     .box-order-info .form-input input, .box-order-info .form-input select{
@@ -5717,7 +5743,7 @@ blockquote span{
     width: 700px;
     border-left:none;
     font-size: 13px;
-    color: #b7b7b7;
+    color: #585353;
 }
 .categori-search{
     width: 170px;
@@ -6196,7 +6222,7 @@ blockquote span{
     font-size: 14px;
     color: #232530;
 }
-.mini-cart-content .remove{
+.mini-cart-content .remove-li{
     color: #232530;
     position: absolute;
     right: 0;
@@ -7362,7 +7388,7 @@ blockquote span{
     width: 1000px;
 }
 .modal-quickview{
-     width: 900px;
+    width: 900px;
     padding-left: 5px;
     padding-right: 5px;
     text-align: left;

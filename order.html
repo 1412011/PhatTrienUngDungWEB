@@ -33,8 +33,8 @@
                 <div class="switcher-current">
                     <a href="#" class="switcher-item">Dollar (US)</a>
                     <ul class="submenu">
-                        <li class="menu-item"><a href="#" class="switcher-item">Dollar (US)</a></li>
-                        <li class="menu-item"><a href="#" class="switcher-item">VietNamDong (VND)</a></li>
+                        <li class="menu-item"><a href="javascript:;" class="switcher-item">Dollar (US)</a></li>
+                        <li class="menu-item"><a href="javascript:;" class="switcher-item">VietNamDong (VND)</a></li>
                     </ul>
                 </div>
                 <div class="switcher-language">
@@ -138,11 +138,11 @@
                                         <div class="help-block with-errors"></div>
                                     </div> -->
 
-                                    <div class="checkbox">
+                                    <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Ghi nhớ</label>
                                     </div>
                                     <p class="form-submit">
-                                        <button type="button" class="btn btn-default submit-login">Login</button>
+                                        <button type="button" class="btn btn-default submit-login">Đăng nhập</button>
                                     </p>
 
                                     <div class="fg-pass">
@@ -310,53 +310,44 @@
             <div class="step-by-step">
                 <ul class="list-step">
                     <li class="items-step "><span><p>Giỏ hàng</p></span></li>
-                    <li class="items-step "><span><p>Địa chỉ</p></span></li>
-                    <li class="items-step active"><span><p>Thanh toán</p></span></li>
+                    <li class="items-step "><span><p>Hóa đơn</p></span></li>
+                    <li class="items-step active"><span><p>Hoàn tất</p></span></li>
                 </ul>
             </div>
         </div>
         <div class="container">
             <div class="order-form">
-                <div class="message-return red-text">* Thông tin thanh toán của bạn được đảm bảo an toàn tuyệt đối</div>
                 <div class="row">
                     <div class="col-md-8">
                         <div class="box-form-order">
-                            <div class="title">THÔNG TIN THANH TOÁN</div>
+                            <div class="title">THÔNG TIN HÓA ĐƠN</div>
                             <div class="box-order-info address">
-                                <label>Phương thức nhận hàng</label>
-                                <div class="box-content">
-                                    <div class="items-parent">
-                                        <div class="arrow-items">COD</div>
-                                        <div class="children">
-                                            <div class="transfer-atm">
-                                                <p>Nhận hàng khi thanh toán</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="items-parent">
-                                        <div class="arrow-items">Chuyển khoản ATM</div>
-                                        <div class="children">
-                                            <div class="transfer-atm">
-                                                <div class="message-return red-text">* Lưu ý</div>
-                                                <p>&#8594; Khi shop nhận được tiền chuyển khoản, sản phẩm mới được xuất kho</p>
-                                                <p>&#8594; Vui lòng chuyển khoản vào tài khoản ngân hàng của shop</p>
-                                                <ul class="margin-left-10">
-                                                    <li>ARGIBANK    : Nguyễn Hoàng Anh - STK: 6380 2010 0835 9</li>
-                                                    <li>Vietinbank  : Nguyễn Hoàng Anh - STK: 1080 0398 8368</li>
-                                                    <li>Sacombabank : Nguyễn Hoàng Anh - STK: 0200 0426 2498</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="items-parent">
-                                        <div class="arrow-items">Master Card, Visa, Discover</div>
-                                        <div class="children">
-                                            <div class="transfer-atm">
-                                                
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div> 
+                                <div class="form-group">
+                                    <label>Họ tên người nhận:</label>
+                                    <label class="info-order-complete">Nguyễn Văn An</label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Số điện thoại:</label>
+                                    <label class="info-order-complete">0981333497</label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Email:</label>
+                                    <label class="info-order-complete">nghanh.ittn@gmail.com</label>
+                                </div>
+                                <div class="form-group">
+                                    <label>Địa chỉ nhận hàng:</label>
+                                    <textarea class="form-control" rows="3" readonly="true"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>Thanh toán:</label>
+                                    <label class="info-order-complete">COD</label>
+                                </div>
+                                <div class="change-info">
+                                     <a href="checkout.html" class="">Thay đổi thông tin</a>
+                                </div>
+                                <div class="">
+                                     <a href="index.html" class="btn-check process">&#10095;&#10095; XÁC NHẬN</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -370,7 +361,7 @@
                                 <div class="shipping-left">Tổng tiền<span class="price">22000000</span></div>
                                 <div class="shipping-left">Phí vận chuyển<span>Miễn phí</span></div>
                                 <div class="shipping-left">Tổng thanh toán<span class="price">22000000</span></div>
-                                <a href="#" class="btn-check process">&#10095;&#10095; HOÀN TẤT</a>
+                               
                             </div>
                         </div>
                     </div>
@@ -403,13 +394,13 @@
                         </a>
                     </div>
                     <div class="footer-infomation">
-                        <p>101 E 129th St, East Chicago,<br>
-                            IN 46312, US</p>
-                        <p>Phone: 001-1234-88888</p>
-                        <p>Email: Kutethemes@gmail.com</p>
+                        <p>I82 Nguyễn Văn Cừ, <br>
+                            Quận 5, TPHCM</p>
+                        <p>Điện thoại: 0981333497</p>
+                        <p>Email: nghanh.ittn@gmail.com</p>
                     </div>
                     <div class="social-footer">
-                        <span class="social-text">GET IN TOUCH !</span>
+                        <span class="social-text">Liên lạc</span>
                         <ul class="socials">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-rss"></i></a></li>
@@ -421,43 +412,31 @@
                 </div>
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-3">
                     <div class="menu-footer">
-                        <h3 class="title-footer">Find It Fast</h3>
+                        <h3 class="title-footer">Tìm nhanh</h3>
                         <ul class="menu">
-                            <li class="menu-item"><a href="#">Laptop $ Computers</a></li>
-                            <li class="menu-item"><a href="#">Smart Phone & Tablets</a></li>
-                            <li class="menu-item"><a href="#">TV & Audio</a></li>
-                            <li class="menu-item"><a href="#">Cameras & Photography</a></li>
-                            <li class="menu-item"><a href="#">Gadgets</a></li>
-                            <li class="menu-item"><a href="#">Car Electronic & GP5</a></li>
-                            <li class="menu-item"><a href="#">Accesories</a></li>
+                            <li class="menu-item"><a href="#">Điện thoại</a></li>
+                            <li class="menu-item"><a href="#">Máy tính bảng</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-2">
                     <div class="menu-footer">
-                        <h3 class="title-footer">Information</h3>
+                        <h3 class="title-footer">Thông tin</h3>
                         <ul class="socials">
-                            <li class="menu-item"><a href="#">Find a Store</a></li>
-                            <li class="menu-item"><a href="#">About Us</a></li>
-                            <li class="menu-item"><a href="#">Contact Us</a></li>
-                            <li class="menu-item"><a href="#">Delivery information</a></li>
-                            <li class="menu-item"><a href="#">Privacy Policy</a></li>
-                            <li class="menu-item"><a href="#">Terms & Conditions</a></li>
-                            <li class="menu-item"><a href="#">Gift Cards</a></li>
+                            <li class="menu-item"><a href="#">Giới thiệu</a></li>
+                            <li class="menu-item"><a href="#">Liên hệ</a></li>
+                            <li class="menu-item"><a href="#">Thông tin giao hàng</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-2">
                     <div class="menu-footer">
-                        <h3 class="title-footer">Customer Care</h3>
+                        <h3 class="title-footer">Khách hàng</h3>
                         <ul class="socials">
-                            <li class="menu-item"><a href="#">My Account</a></li>
-                            <li class="menu-item"><a href="#">Order History</a></li>
-                            <li class="menu-item"><a href="#">Wishlist</a></li>
-                            <li class="menu-item"><a href="#">Customer Service</a></li>
-                            <li class="menu-item"><a href="#">Returns / Exchange</a></li>
-                            <li class="menu-item"><a href="#">FAQs</a></li>
-                            <li class="menu-item"><a href="#">Product Support</a></li>
+                            <li class="menu-item"><a href="#">Tài khoản</a></li>
+                            <li class="menu-item"><a href="#">Đơn hàng</a></li>
+                            <li class="menu-item"><a href="#">Yêu thích</a></li>
+                            <li class="menu-item"><a href="#">Hỗ trợ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -468,13 +447,13 @@
                 <div class="newsletter-form-wrap">
                     <div class="newsletter-form">
                         <div class="title-label-newsletter">
-                            <span class="label-b">Sign Up to <span>News letter</span></span>
-                            <span class="label-s">Subscribe our newsletter gor get notification about information discount.</span>
+                            <span class="label-b">Đăng ký nhận <span>Tin tức mới</span></span>
+                            <span class="label-s">Đăng ký để có những món hàng giảm giá hay hàng mới nhất</span>
                         </div>
                         <form method="post" action="#" class="form-newsletter">
                             <div class="newsletter-content">
                                 <input type="email" name="email" placeholder="Your email address">
-                                <button class="submit-button" type="submit">SUBSCRIBE</button>
+                                <button class="submit-button" type="submit">ĐĂNG KÝ NGAY</button>
                             </div>
                         </form>
                     </div>
