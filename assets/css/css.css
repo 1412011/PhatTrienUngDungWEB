@@ -13,7 +13,7 @@ body {
 	left: 0;
 	padding: 5px 0;
 	transition: all 400ms ease;
-	z-index: 1000;
+	z-index: 1001;
 }
 
 .pre-header-fixed {
@@ -24,14 +24,13 @@ body {
 	left: 0;
 	padding: 0;
 	transition: all 400ms ease;
-	z-index: 1000;
+	z-index: 1001;
 }
 
 .header {
 	width: 100%;
-	/*background-color: rgba(20, 103, 193,1);*/
 	background-color: rgba(68,82,97,0.9);
-	box-shadow: 0px 0.5px 0px #fff;
+	box-shadow: 0px 1px 0px #fff;
 	position: fixed;
 	top: 34px;
 	left: 0;
@@ -42,9 +41,8 @@ body {
 
 .header-fixed {
 	width: 100%;
-	/*background-color: rgba(20, 103, 193,1);*/
 	background-color: rgba(68,82,97,0.9);
-	box-shadow: 0px 0.5px 0px #fff;
+	box-shadow: 0px 4px 10px rgba(68,82,97,0.8);
 	position: fixed;
 	top: 24px;
 	left: 0;
@@ -52,12 +50,6 @@ body {
 	transition: all 400ms ease;
 	z-index: 1000;
 }
-
-/*#container {
-	position: relative;
-	color: #fff;
-	top: 60px;
-}*/
 
 .NavBar {
 	display: flex;
@@ -137,13 +129,20 @@ body {
 	transition: all 400ms ease;
 }
 
+.submenu {
+	position: absolute; 
+	padding-left: 0; 
+	top: 75px; 
+	visibility: hidden;
+	opacity: 0;
+	transition: all 300ms ease-out;
+}
 
-/*.Background {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	filter: brightness(70%);
-}*/
+#NavBar li:hover .submenu {
+	visibility: visible;
+	opacity: 1;
+	top: 45px;
+}
 
 .footer {
 	background-color: rgba(21,25,29,0.9);
@@ -162,6 +161,69 @@ body {
 	text-decoration: none;
 }
 
+.CotCategory-fixed {
+	position: fixed;
+	top: 100px;
+}
+
+.card-header {
+	text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background-color: #23428f;
+}
+
+.card {
+	font-size: 13px;
+}
+
+#CotCategory .list-group-item {
+	padding: .75rem .75rem;
+}
+
+.list-group-item:first-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+
+}
+
+.list-group-item.active {
+	color: #fff;
+    background-color: #189eff;
+    border-color: #189eff;
+}
+
+.list-group-item.active img {
+	filter: brightness(0) invert(1);
+}
+
+.list-group-item-action:hover {
+	color: #ffffff;
+    background-color: #189eff;
+    transition: background-color 0.3s ease-in;
+}
+
+.list-group-item-action:hover img {
+	filter: brightness(0) invert(1);
+}
+
+.DanhMuc {
+	margin-bottom: 50px;
+}
+
+.TenDanhMuc {
+	position: relative;
+	color: #fff;
+	border-bottom: 30px solid #23428f;
+	border-right: 50px solid transparent; 
+	width: 230px; 
+}
+
+.Name {
+	position: absolute;
+	left: 10px;
+	top: 3px;
+}
 /*.myRow {
 	height: 590px;
 }*/
@@ -237,3 +299,8 @@ body {
 	font-size: 22px;
 	margin: 40px;
 }*/
+
+
+#DanhSachHienThi .col {
+	margin-bottom: 30px;
+}

@@ -1,16 +1,27 @@
 window.onscroll = function() {
+            var scrollBottom = $(window).scrollTop() + $(window).height();
 			if (document.documentElement.scrollTop > 10) {
-                document.getElementById("pre-header").className= "pre-header-fixed";
-                document.getElementById("header").className= "header-fixed";
-        		document.getElementById("AnhLogo").className="AnhLogo-fixed";
-                document.getElementById("NavbarSearch").className= "col-3 NavbarSearch-fixed";
-                document.getElementById("NavBar").className= "NavBar-fixed";
+                $("#pre-header").addClass("pre-header-fixed").removeClass("pre-header");
+                $("#header").addClass("header-fixed").removeClass("header");
+        		$("#AnhLogo").addClass("AnhLogo-fixed").removeClass("AnhLogo");
+                $("#NavbarSearch").addClass("NavbarSearch-fixed").removeClass("NavbarSearch");
+                $("#NavBar").addClass("NavBar-fixed").removeClass("NavBar");
             };
+
+            if (document.documentElement.scrollTop > 348) {
+                $("#CotCategory").addClass("CotCategory-fixed");
+            }
+
     		if (document.documentElement.scrollTop < 10) {
-                document.getElementById("pre-header").className= "pre-header";
-                document.getElementById("header").className= "header";
-        		document.getElementById("AnhLogo").className="AnhLogo"; 
-                document.getElementById("NavbarSearch").className= "col-3 NavbarSearch";
-                document.getElementById("NavBar").className= "NavBar";
+                $("#pre-header").addClass("pre-header").removeClass("pre-header-fixed");
+                $("#header").addClass("header").removeClass("header-fixed");
+        		$("#AnhLogo").addClass("AnhLogo").removeClass("AnhLogo-fixed");
+                $("#NavbarSearch").addClass("NavbarSearch").removeClass("NavbarSearch-fixed");
+                $("#NavBar").addClass("NavBar").removeClass("NavBar-fixed");
             };
+
+            if (document.documentElement.scrollTop < 348) {
+                $("#CotCategory").removeClass("CotCategory-fixed");
+            }
 		};
+
