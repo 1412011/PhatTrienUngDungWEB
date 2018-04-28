@@ -143,6 +143,10 @@ $('document').ready(function(){
     todayHighlight: true 
     }).datepicker('update', new Date());
 
+    $('a.show-more-a').on('click',function(){
+        $('li.hide-show').toggleClass('item-hidden');
+    });
+
 });
 
   function openCity(evt, cityName) {

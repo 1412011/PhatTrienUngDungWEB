@@ -52,7 +52,7 @@
                 <ul class="main-menu clone-main-menu">
                     <li class="menu-item menu-item-has-children"><a href="index.html" class="kt-item-title" title="Home">Trang chủ</a>
                     </li>
-                    <li class="menu-item menu-item-has-children"><a href="#" class="kt-item-title" title="PAGES">Giới thiệu</a>
+                    <li class="menu-item menu-item-has-children"><a href="about-us.html" class="kt-item-title" title="PAGES">Giới thiệu</a>
                     </li>
                     <li class="menu-item menu-item-has-children"><a href="shop-grid.html" class="kt-item-title" title="Shop">Sản phẩm</a>
                         <div class="submenu megamenu">
@@ -60,24 +60,24 @@
                                 <div class="col-sm-6">
                                     <div class="custommenu">
                                         <ul class="menu">
-                                            <li class="menu-item"><a href="shop-grid.html">ĐIỆN THOẠI</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; APPLE - IPhone</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SAMSUNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; HTC</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SONY</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; NOKIA</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; OPPO</a></li>
+                                            <li class="menu-item"><a href="shop-grid-dt.html">ĐIỆN THOẠI</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; APPLE - IPhone</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; SAMSUNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; HTC</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; SONY</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; NOKIA</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; OPPO</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="custommenu">
                                         <ul class="menu">
-                                            <li class="menu-item"><a href="shop-categories.html">MÁY TÍNH BẢNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; APPLE - IPad</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SAMSUNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; HUAWEI</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; LENOVO</a></li>
+                                            <li class="menu-item"><a href="shop-grid-mtb.html">MÁY TÍNH BẢNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; APPLE - IPad</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; SAMSUNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; HUAWEI</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; LENOVO</a></li>
                                         </ul>
                                     </div> 
                                 </div>
@@ -114,13 +114,6 @@
                                     <div class="form-input">
                                         <input type="password" class="form-control" placeholder="Mật khẩu">
                                     </div>
-
-                                    <!-- <div class="form-group">
-                                        <div class="g-recaptcha" data-sitekey="" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-                                        <div class="help-block with-errors"></div>
-                                    </div> -->
-
                                     <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Ghi nhớ</label>
                                     </div>
@@ -132,7 +125,7 @@
                                         <a class="register" data-dismiss="modal" data-toggle="modal" href="#modal-register">Đăng ký tài khoản mới</a>
                                     </div>
                                     <div class="fg-pass">
-                                        <a class="forget-password" href="">Quên mật khẩu</a>
+                                        <a class="forget-password" href="#modal-foget-pass" data-dismiss="modal" data-toggle="modal">Quên mật khẩu</a>
                                     </div>
                                 </form>
                             </div>                                
@@ -147,6 +140,38 @@
         <!-- modal register -->
         <div class="container">
             <!-- Modal -->
+            <div class="modal fade" id="modal-foget-pass" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="close-modal-x">
+                                <a data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span></a>
+                            </div>
+                            <h3 class="header-title-modal">Khôi phục mật khẩu ở Smart Store</h3>
+                            <div class="form-login-input">
+                                <form>
+                                    <p>Điền Email tài khoản để đổi mật khẩu mới</p>
+                                    <div class="form-input">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+
+                                    <p class="form-submit">
+                                        <button type="button" class="btn btn-default submit-login" data-dismiss="modal">Gửi mail</button>
+                                    </p>
+
+                                </form>
+                            </div>                                
+                        </div>
+                      
+                    </div> <!-- modal content -->
+                 
+                </div>
+            </div>
+        </div> <!-- end modal register -->
+
+        <!-- modal register -->
+        <div class="container">
+            <!-- Modal -->
             <div class="modal fade" id="modal-register" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -154,7 +179,7 @@
                             <div class="close-modal-x">
                                 <a data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span></a>
                             </div>
-                            <h3 class="header-title-modal">Đăng ký SmartMarket</h3>
+                            <h3 class="header-title-modal">Đăng ký Smart Store</h3>
                             <div class="form-login-input">
                                 <form>
                                     <div class="form-input">
@@ -165,6 +190,9 @@
                                     </div>
                                     <div class="form-input">
                                         <input type="password" class="form-control" placeholder="Nhập lại Mật khẩu">
+                                    </div>
+                                    <div class="g-recaptcha" data-sitekey="6LdrEVYUAAAAAIW-wRsQhJiSJlOPmKMqvagwbiuX">
+                                        
                                     </div>
                                    <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Chấp nhận <a class="a-txt-gach-chan" href="">điều khoản</a> của SmartMarket</label>
@@ -191,8 +219,8 @@
                 </div>
                 <div class="vertical-menu-content">
                     <ul class="vertical-menu-items">
-                        <li class="menu-item"><a href="shop-grid.html"><i class="fa fa-mobile"></i>Điện thoại</a></li>
-                        <li class="menu-item"><a href="shop-grid.html"><i class="fa fa-tablet"></i>Máy tính bảng</a></li>
+                        <li class="menu-item"><a href="shop-grid-dt.html"><i class="fa fa-mobile"></i>Điện thoại</a></li>
+                        <li class="menu-item"><a href="shop-grid-mtb.html"><i class="fa fa-tablet"></i>Máy tính bảng</a></li>
                     </ul>
                 </div>
             </div>
@@ -271,22 +299,13 @@
                     <nav class="breadcrumb-trail breadcrumbs">
                         <ul class="trail-items">
                             <li class="trail-item trail-begin">
-                                <a href="index.html"><span>Home</span></a>
+                                <a href="index.html"><span>Trang chủ</span></a>
                             </li>
                             <li class="trail-item trail-begin">
-                                <a href="shop-grid-3column.html"><span>Shop</span></a>
+                                <a href="shop-grid.html"><span>Sản phẩm</span></a>
                             </li>
                             <li class="trail-item trail-begin">
-                                <a href="shop-detail-accessories.html"><span>Product detail</span></a>
-                            </li>
-                            <li class="trail-item trail-begin">
-                                <a href="shopping-cart.html"><span>shop cart</span></a>
-                            </li>
-                            <li class="trail-item trail-begin">
-                                <a href="checkout.html"><span>Checkout</span></a>
-                            </li>
-                            <li class="trail-item trail-begin">
-                                <a href="order.html"><span>Order</span></a>
+                                <a href="shop-detail-accessories.html"><span>Chi tiết sản phẩm</span></a>
                             </li>
                         </ul>
                     </nav>
@@ -362,7 +381,7 @@
                                      <span>Sản phẩm còn lại: </span>
                                      <span>100</span>
                                 </div>
-                                <a href="#" class="add-to-cart-detail">ĐẶT HÀNG NGAY</a>
+                                <a href="shopping-cart.html" class="add-to-cart-detail">ĐẶT HÀNG NGAY</a>
                             </div>
                         </div>
                         <!-- modal Login -->
@@ -537,7 +556,7 @@
                                     <div class="info">
                                         <span class="product-title">IPHONE 6 32GB</span>
                                         <span class="price">
-                                            <ins>12.490.000 đ</ins>
+                                            <ins>12 490 000 đ</ins>
                                         </span>
                                         
                                          <div><button type="button" class="btn btn-primary add_to_cart">Mua ngay</button></div>
@@ -552,7 +571,7 @@
                                     <div class="info">
                                         <span class="product-title">IPhone 7 Plus 128GB</span>
                                         <span class="price">
-                                            <ins>22.390.000 đ</ins>
+                                            <ins>22 390 000 đ</ins>
                                         </span>
                                         
                                          <div><button type="button" class="btn btn-primary add_to_cart">Mua ngay</button></div>
@@ -567,7 +586,7 @@
                                     <div class="info">
                                         <span class="product-title">Iphone 7 32GB</span>
                                         <span class="price">
-                                            <ins>19.790.000 đ</ins>
+                                            <ins>19 790 000 đ</ins>
                                         </span>
                                         
                                          <div><button type="button" class="btn btn-primary add_to_cart">Mua ngay</button></div>
@@ -582,7 +601,7 @@
                                     <div class="info">
                                         <span class="product-title">IPHONE 8 256GB RED</span>
                                         <span class="price">
-                                            <ins>26.790.000 đ</ins>
+                                            <ins>26 790 000 đ</ins>
                                         </span>
                                         
                                          <div><button type="button" class="btn btn-primary add_to_cart">Mua ngay</button></div>
@@ -597,7 +616,7 @@
                                     <div class="info">
                                         <span class="product-title">Iphone 5 16GB</span>
                                         <span class="price">
-                                            <ins>5.890.000 đ</ins>
+                                            <ins>5 890 000 đ</ins>
                                         </span>
                                         
                                          <div><button type="button" class="btn btn-primary add_to_cart">Mua ngay</button></div>
@@ -614,7 +633,7 @@
                                     <div class="info">
                                         <span class="product-title">Iphone 5s 16GB</span>
                                         <span class="price">
-                                            <ins>7.999.000 đ</ins>
+                                            <ins>7 999 000 đ</ins>
                                         </span>
                                         
                                          <div><button type="button" class="btn btn-primary add_to_cart">Mua ngay</button></div>
@@ -629,7 +648,7 @@
                                     <div class="info">
                                         <span class="product-title">Iphone SE 16GB</span>
                                         <span class="price">
-                                            <ins>10.590.000 đ</ins>
+                                            <ins>10 590 000 đ</ins>
                                         </span>
                                         
                                          <div><button type="button" class="btn btn-primary add_to_cart">Mua ngay</button></div>
@@ -666,19 +685,19 @@
                                     <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ip-x-w-0.png">
                                 </a>
                             </figure>
-                            <a href="#" class="quick-view">quick view</a>
+                            <a href="#" class="quick-view">Xem nhanh</a>
                         </div>
                         <div class="product-info">
                             <div class="product-content">
                                 <span class="price">
-                                    <ins>34.790.000 đ</ins>
+                                    <ins>34 790 000 đ</ins>
                                     <del></del>
                                 </span>
                             </div>
                             <div class="group-btn-control">
                                 <div class="inner">
                                     <a href="#" class="compare button"><span class="arrow_left-right_alt"></span></a>
-                                    <a href="#" class="add_to_cart">Add to Cart</a>
+                                    <a href="#" class="add_to_cart">Thêm giỏ hàng</a>
                                     <a href="#" class="button add_to_wishlist"><span class="icon_heart_alt"></span></a>
                                 </div>
                             </div>
@@ -703,17 +722,17 @@
                                     <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-air-2-128-0.png">
                                 </a>
                             </figure>
-                            <a href="#" class="quick-view">quick view</a>
+                            <a href="#" class="quick-view">Xem nhanh</a>
                         </div>
                         <div class="product-info">
                             <div class="product-content">
-                                <span class="price">15.490.000 đ</span>
+                                <span class="price">15 490 000 đ</span>
                                 
                             </div>
                             <div class="group-btn-control">
                                 <div class="inner">
                                     <a href="#" class="compare button"><span class="arrow_left-right_alt"></span></a>
-                                    <a href="#" class="add_to_cart">Add to Cart</a>
+                                    <a href="#" class="add_to_cart">Thêm giỏ hàng</a>
                                     <a href="#" class="button add_to_wishlist"><span class="icon_heart_alt"></span></a>
                                 </div>
                             </div>
@@ -741,19 +760,19 @@
                             <div class="flash">
                                 <span class="onnew">new</span>
                             </div>
-                            <a href="#" class="quick-view">quick view</a>
+                            <a href="#" class="quick-view">Xem nhanh</a>
                         </div>
                         <div class="product-info">
                             <div class="product-content">
                                 <span class="price">
-                                    <ins>28.290.000 đ</ins>
-                                    <del>28.790.000 đ</del>
+                                    <ins>28 290 000 đ</ins>
+                                    <del>28 790 000 đ</del>
                                 </span>
                             </div>
                             <div class="group-btn-control">
                                 <div class="inner">
                                     <a href="#" class="compare button"><span class="arrow_left-right_alt"></span></a>
-                                    <a href="#" class="add_to_cart">Add to Cart</a>
+                                    <a href="#" class="add_to_cart">Thêm giỏ hàng</a>
                                     <a href="#" class="button add_to_wishlist"><span class="icon_heart_alt"></span></a>
                                 </div>
                             </div>
@@ -778,17 +797,17 @@
                                     <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-mini-4-128-0.png">
                                 </a>
                             </figure>
-                            <a href="#" class="quick-view">quick view</a>
+                            <a href="#" class="quick-view">Xem nhanh</a>
                         </div>
                         <div class="product-info">
                             <div class="product-content">
-                                <span class="price">10.990.000 đ</span>
+                                <span class="price">10 990 000 đ</span>
                                 
                             </div>
                             <div class="group-btn-control">
                                 <div class="inner">
                                     <a href="#" class="compare button"><span class="arrow_left-right_alt"></span></a>
-                                    <a href="#" class="add_to_cart">Add to Cart</a>
+                                    <a href="#" class="add_to_cart">Thêm giỏ hàng</a>
                                     <a href="#" class="button add_to_wishlist"><span class="icon_heart_alt"></span></a>
                                 </div>
                             </div>
@@ -813,17 +832,17 @@
                                     <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-pro-2017-0.png">
                                 </a>
                             </figure>
-                            <a href="#" class="quick-view">quick view</a>
+                            <a href="#" class="quick-view">Xem nhanh</a>
                         </div>
                         <div class="product-info">
                             <div class="product-content">
-                                <span class="price">19.990.000 đ</span>
+                                <span class="price">19 990 000 đ</span>
                                 
                             </div>
                             <div class="group-btn-control">
                                 <div class="inner">
                                     <a href="#" class="compare button"><span class="arrow_left-right_alt"></span></a>
-                                    <a href="#" class="add_to_cart">Add to Cart</a>
+                                    <a href="#" class="add_to_cart">Thêm giỏ hàng</a>
                                     <a href="#" class="button add_to_wishlist"><span class="icon_heart_alt"></span></a>
                                 </div>
                             </div>
@@ -848,17 +867,17 @@
                                     <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ip-se-26-0.png">
                                 </a>
                             </figure>
-                            <a href="#" class="quick-view">quick view</a>
+                            <a href="#" class="quick-view">Xem nhanh</a>
                         </div>
                         <div class="product-info">
                             <div class="product-content">
-                                <span class="price">10.990.000 đ</span>
+                                <span class="price">10 990 000 đ</span>
                                 
                             </div>
                             <div class="group-btn-control">
                                 <div class="inner">
                                     <a href="#" class="compare button"><span class="arrow_left-right_alt"></span></a>
-                                    <a href="#" class="add_to_cart">Add to Cart</a>
+                                    <a href="#" class="add_to_cart">Thêm giỏ hàng</a>
                                     <a href="#" class="button add_to_wishlist"><span class="icon_heart_alt"></span></a>
                                 </div>
                             </div>
@@ -883,17 +902,17 @@
                                     <img alt="img" class="thumb-item-product-imgs" src="images/imgs/ipad-pro-2017-0.png">
                                 </a>
                             </figure>
-                            <a href="#" class="quick-view">quick view</a>
+                            <a href="#" class="quick-view">Xem nhanh</a>
                         </div>
                         <div class="product-info">
                             <div class="product-content">
-                                <span class="price">12.990.000 đ</span>
+                                <span class="price">12 990 000 đ</span>
                                 
                             </div>
                             <div class="group-btn-control">
                                 <div class="inner">
                                     <a href="#" class="compare button"><span class="arrow_left-right_alt"></span></a>
-                                    <a href="#" class="add_to_cart">Add to Cart</a>
+                                    <a href="#" class="add_to_cart">Thêm giỏ hàng</a>
                                     <a href="#" class="button add_to_wishlist"><span class="icon_heart_alt"></span></a>
                                 </div>
                             </div>
@@ -925,7 +944,7 @@
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-5">
                     <div class="logo-footer">
                         <a href="index.html">
-                            <img src="images/logo-footer.png" alt="img">
+                            <img src="images/imgs/logo2-footer.png" alt="img">
                         </a>
                     </div>
                     <div class="footer-infomation">
@@ -987,7 +1006,7 @@
                         </div>
                         <form method="post" action="#" class="form-newsletter">
                             <div class="newsletter-content">
-                                <input type="email" name="email" placeholder="Your email address">
+                                <input type="email" name="email" placeholder="Địa chỉ email">
                                 <button class="submit-button" type="submit">ĐĂNG KÝ NGAY</button>
                             </div>
                         </form>

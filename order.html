@@ -52,7 +52,7 @@
                 <ul class="main-menu clone-main-menu">
                     <li class="menu-item menu-item-has-children"><a href="index.html" class="kt-item-title" title="Home">Trang chủ</a>
                     </li>
-                    <li class="menu-item menu-item-has-children"><a href="#" class="kt-item-title" title="PAGES">Giới thiệu</a>
+                    <li class="menu-item menu-item-has-children"><a href="about-us.html" class="kt-item-title" title="PAGES">Giới thiệu</a>
                     </li>
                     <li class="menu-item menu-item-has-children"><a href="shop-grid.html" class="kt-item-title" title="Shop">Sản phẩm</a>
                         <div class="submenu megamenu">
@@ -60,24 +60,24 @@
                                 <div class="col-sm-6">
                                     <div class="custommenu">
                                         <ul class="menu">
-                                            <li class="menu-item"><a href="shop-grid.html">ĐIỆN THOẠI</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; APPLE - IPhone</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SAMSUNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; HTC</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SONY</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; NOKIA</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; OPPO</a></li>
+                                            <li class="menu-item"><a href="shop-grid-dt.html">ĐIỆN THOẠI</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; APPLE - IPhone</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; SAMSUNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; HTC</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; SONY</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; NOKIA</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; OPPO</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="custommenu">
                                         <ul class="menu">
-                                            <li class="menu-item"><a href="shop-categories.html">MÁY TÍNH BẢNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; APPLE - IPad</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SAMSUNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; HUAWEI</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; LENOVO</a></li>
+                                            <li class="menu-item"><a href="shop-grid-mtb.html">MÁY TÍNH BẢNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; APPLE - IPad</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; SAMSUNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; HUAWEI</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; LENOVO</a></li>
                                         </ul>
                                     </div> 
                                 </div>
@@ -114,13 +114,6 @@
                                     <div class="form-input">
                                         <input type="password" class="form-control" placeholder="Mật khẩu">
                                     </div>
-
-                                    <!-- <div class="form-group">
-                                        <div class="g-recaptcha" data-sitekey="" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-                                        <div class="help-block with-errors"></div>
-                                    </div> -->
-
                                     <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Ghi nhớ</label>
                                     </div>
@@ -132,7 +125,7 @@
                                         <a class="register" data-dismiss="modal" data-toggle="modal" href="#modal-register">Đăng ký tài khoản mới</a>
                                     </div>
                                     <div class="fg-pass">
-                                        <a class="forget-password" href="">Quên mật khẩu</a>
+                                        <a class="forget-password" href="#modal-foget-pass" data-dismiss="modal" data-toggle="modal">Quên mật khẩu</a>
                                     </div>
                                 </form>
                             </div>                                
@@ -147,6 +140,38 @@
         <!-- modal register -->
         <div class="container">
             <!-- Modal -->
+            <div class="modal fade" id="modal-foget-pass" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="close-modal-x">
+                                <a data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span></a>
+                            </div>
+                            <h3 class="header-title-modal">Khôi phục mật khẩu ở Smart Store</h3>
+                            <div class="form-login-input">
+                                <form>
+                                    <p>Điền Email tài khoản để đổi mật khẩu mới</p>
+                                    <div class="form-input">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+
+                                    <p class="form-submit">
+                                        <button type="button" class="btn btn-default submit-login" data-dismiss="modal">Gửi mail</button>
+                                    </p>
+
+                                </form>
+                            </div>                                
+                        </div>
+                      
+                    </div> <!-- modal content -->
+                 
+                </div>
+            </div>
+        </div> <!-- end modal register -->
+
+        <!-- modal register -->
+        <div class="container">
+            <!-- Modal -->
             <div class="modal fade" id="modal-register" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -154,7 +179,7 @@
                             <div class="close-modal-x">
                                 <a data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span></a>
                             </div>
-                            <h3 class="header-title-modal">Đăng ký SmartMarket</h3>
+                            <h3 class="header-title-modal">Đăng ký Smart Store</h3>
                             <div class="form-login-input">
                                 <form>
                                     <div class="form-input">
@@ -165,6 +190,9 @@
                                     </div>
                                     <div class="form-input">
                                         <input type="password" class="form-control" placeholder="Nhập lại Mật khẩu">
+                                    </div>
+                                    <div class="g-recaptcha" data-sitekey="6LdrEVYUAAAAAIW-wRsQhJiSJlOPmKMqvagwbiuX">
+                                        
                                     </div>
                                    <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Chấp nhận <a class="a-txt-gach-chan" href="">điều khoản</a> của SmartMarket</label>
@@ -191,8 +219,8 @@
                 </div>
                 <div class="vertical-menu-content">
                     <ul class="vertical-menu-items">
-                        <li class="menu-item"><a href="shop-grid.html"><i class="fa fa-mobile"></i>Điện thoại</a></li>
-                        <li class="menu-item"><a href="shop-grid.html"><i class="fa fa-tablet"></i>Máy tính bảng</a></li>
+                        <li class="menu-item"><a href="shop-grid-dt.html"><i class="fa fa-mobile"></i>Điện thoại</a></li>
+                        <li class="menu-item"><a href="shop-grid-mtb.html"><i class="fa fa-tablet"></i>Máy tính bảng</a></li>
                     </ul>
                 </div>
             </div>
@@ -271,22 +299,22 @@
                     <nav class="breadcrumb-trail breadcrumbs">
                         <ul class="trail-items">
                             <li class="trail-item trail-begin">
-                                <a href="index.html"><span>Home</span></a>
+                                <a href="index.html"><span>Trang chủ</span></a>
                             </li>
                             <li class="trail-item trail-begin">
-                                <a href="shop-grid-3column.html"><span>Shop</span></a>
+                                <a href="shop-grid.html"><span>Sản phẩm</span></a>
                             </li>
                             <li class="trail-item trail-begin">
-                                <a href="shop-detail-accessories.html"><span>Product detail</span></a>
+                                <a href="shop-detail-accessories.html"><span>Chi tiết</span></a>
                             </li>
                             <li class="trail-item trail-begin">
-                                <a href="shopping-cart.html"><span>shop cart</span></a>
+                                <a href="shopping-cart.html"><span>Giỏ hàng</span></a>
                             </li>
                             <li class="trail-item trail-begin">
-                                <a href="checkout.html"><span>Checkout</span></a>
+                                <a href="checkout.html"><span>Thông tin thanh toán</span></a>
                             </li>
                             <li class="trail-item trail-begin">
-                                <a href="order.html"><span>Order</span></a>
+                                <a href="order.html"><span>Hoàn tất</span></a>
                             </li>
                         </ul>
                     </nav>
@@ -333,7 +361,7 @@
                                      <a href="checkout.html" class="">Thay đổi thông tin</a>
                                 </div>
                                 <div class="">
-                                     <a href="index.html" class="btn-check process">&#10095;&#10095; XÁC NHẬN</a>
+                                     <a href="account.html" class="btn-check process">&#10095;&#10095; XÁC NHẬN</a>
                                 </div>
                             </div>
                         </div>
@@ -377,7 +405,7 @@
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-5">
                     <div class="logo-footer">
                         <a href="index.html">
-                            <img src="images/logo-footer.png" alt="img">
+                            <img src="images/imgs/logo2-footer.png" alt="img">
                         </a>
                     </div>
                     <div class="footer-infomation">
