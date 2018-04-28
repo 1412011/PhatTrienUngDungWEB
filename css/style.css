@@ -1685,7 +1685,7 @@ th, td {
         left: 20px;
     }
 }
-/*------------------blog---------------------*/
+/*------------------ACCOUNT---------------------*/
 /* Style the tab */
 .tab {
     float: left;
@@ -1759,6 +1759,7 @@ th, td {
 .info-profile{
     padding-left: 30px;
 }
+.info-order a,
 .info-profile a{
     color:blue;
     text-decoration: underline;
@@ -1783,7 +1784,45 @@ th, td {
 .info-profile .table-borderless{
     border:0;
 }
-/*blog-homepage*/
+.info-order .content-order{
+    border: 1px solid #ccc;
+    margin-bottom: 30px;
+}
+.info-order{
+    font-size: 14px;
+    color: #000;
+    line-height: 22px;
+}
+.info-order p{
+    margin-bottom: 0px;
+}
+.info-order a{
+    text-decoration: none;
+}
+.info-order .header-order{
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+.header-order .total-price-order{
+    float: right;
+}
+.info-order .body-order{
+    padding: 10px;
+    font-size: 13px;
+}
+.body-order .thumb-img-order{
+    height: 90px;
+    width: 90px;
+}
+.body-order .left-order{
+    float: left;
+}
+.body-order .name-product-order{
+    font-weight: bold;
+    display: block;
+}
+/* -----------------------END ACCOUNT-----------------------------*/
+/* -----------------------blog-homepage-----------------------------*/
 .blog-homepage .blog-item{
     border: 1px solid #ebebeb;
 }
