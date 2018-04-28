@@ -30,15 +30,10 @@ $('document').ready(function(){
   });
 
   // remove product cart 
-  $('a.remove-li').on('click',function(){
-    $(this).parent().remove();
+  $('ul.items').on('click','.remove-li',function(){
+    $(this).closest('li').remove();
 
   });
-
-  $('a.remove-item-cart').on('click',function(){
-    $(this).parent().parent().remove();
-  });
-
 
   //only press number product cart 
   $('#quantity-cart,#text-onlynumber').on('keypress',function(e){
@@ -50,10 +45,14 @@ $('document').ready(function(){
   });
 
   //  + -  số lượng ở mini cart
-  $('.price .minus').on('click', function(){
+  $('ul.items').on('click','.price .minus',function(){
+      var id = $(this).closest('li').index();
+
       culc_money(-1);
   });
-  $('.price .plus').on('click', function(){
+  $('ul.items').on('click','.price .plus',function(){
+     var id = $(this).closest('li').index();
+
       culc_money(1);
   });
 
@@ -105,4 +104,61 @@ $('document').ready(function(){
     return str.substr(0, index) + value + str.substr(index);
   }
 
+  $('a.update').on('click',function(){
+    var tr = `<tr class="cart-item">
+                <td class="product-thumbnail" data-title="Image">
+                    <a href="#"><img class="thumb-item-cart" src="images/items1.jpg" alt="img"/></a>
+                </td>
+                <td class="product-name" data-title="Product Name">
+                    <a href="#">Apple The New MacBook Retina</a>
+                </td>
+                <td class="product-price" data-title="Price">
+                    <span class="price">9690000</span>
+                </td>
+                <td class="product-quantity" data-title="Quantity">
+                    <div class="quantity">
+                        <a href="#" class="sign minus"><i class="fa fa-angle-left"></i></a>
+                        <input type="text" id="quantity-cart" value="2" title="Qty" class="input-text qty text" size="1">
+                        <a href="#" class="sign plus"><i class="fa fa-angle-right"></i></a>
+                    </div>
+                </td>
+                <td class="product-subtotal" data-title="Total">
+                    <span class="price">17590000</span>
+                </td>
+                <td class="product-remove">
+                    <a href="javascript:;" class="remove-item-cart"><i class="fa fa-times"></i></a>
+                </td>
+            </tr>
+          `;
+
+    $('#list-item-cart').append(tr);
+  });
+
+  $('#list-item-cart').on('click', '.remove-item-cart' ,function(){
+      $(this).closest('tr').remove();
+  });
+
+    $("#datepicker").datepicker({         
+    autoclose: true,         
+    todayHighlight: true 
+    }).datepicker('update', new Date());
+
 });
+
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
+  

@@ -26,12 +26,12 @@
     <div class="header-top full-width">
         <div class="container">
             <div class="top-bar-left">
-                <div class="header-sale">SHOP EVENTS & SAVE UP TO <span>65% OFF!</span></div>
-                <div class="header-contact">Call Us: <span>001-1234-88888</span></div>
+                <div class="header-sale">Sự kiện store giảm giá sốc <span>đến 65% OFF!</span></div>
+                <div class="header-contact">Gọi cho chúng tôi: <span>0981 333 497</span></div>
             </div>
             <div class="top-bar-right">
                 <div class="switcher-current">
-                    <a href="#" class="switcher-item">Dollar (US)</a>
+                    <a href="#" class="switcher-item">VietNamDong (VND)</a>
                     <ul class="submenu">
                         <li class="menu-item"><a href="#" class="switcher-item">Dollar (US)</a></li>
                         <li class="menu-item"><a href="#" class="switcher-item">VietNamDong (VND)</a></li>
@@ -108,10 +108,12 @@
                 </ul>
             </div>
             <div class="box-items-right">
-                <a data-toggle="modal" href="#modal-login" class="">Register / log in</a>
+                <a data-toggle="modal" href="#modal-login" class="">Đăng nhập</a>
+                <label> / </label>
+                <a data-toggle="modal" href="#modal-register" class="">Đăng ký</a>
             </div>
         </div>
-        
+         
          <!-- modal Login -->
         <div class="container">
             <!-- Modal -->
@@ -138,7 +140,7 @@
                                         <div class="help-block with-errors"></div>
                                     </div> -->
 
-                                    <div class="checkbox">
+                                    <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Ghi nhớ</label>
                                     </div>
                                     <p class="form-submit">
@@ -204,13 +206,12 @@
             <div class="vertical-menu">
                 <div class="block-title">
                     <i class="fa fa-bars"></i>
-                    <span class="text">all Departments</span>
+                    <span class="text">Tất cả danh mục</span>
                 </div>
                 <div class="vertical-menu-content">
                     <ul class="vertical-menu-items">
                         <li class="menu-item"><a href="#"><i class="fa fa-mobile"></i>Điện thoại</a></li>
                         <li class="menu-item"><a href="#"><i class="fa fa-tablet"></i>Máy tính bảng</a></li>
-                        <li class="menu-item"><a href="#"><i class="fa fa-tablet"></i>Sản phẩm cũ</a></li>
                     </ul>
                 </div>
             </div>
@@ -227,7 +228,7 @@
                             <option value="Blackberry">Blackberry</option>
                         </select>
                     </div>
-                    <input type="text" placeholder="What do you need?">
+                    <input type="text" placeholder="Bạn cần tìm gì?">
                     <button class="button-search">TÌM KIẾM</button>
                 </form>
             </div>
@@ -243,21 +244,26 @@
                         <a href="#">
                             <span class="icon icon_bag_alt"></span>
                             <span class="count">1</span>
-                            <span class="total">$180.00</span>
+                            <span class="total">10 000 000 đ</span>
                         </a>
                         <div class="mini-cart-content">
                             <ul class="items">
                                 <li class="item">
                                     <a href="#" class="product-media"><img src="images/mn1.jpg" alt="img"></a>
                                     <div class="product-info">
-                                        <div class="price">$460.00 x 1</div>
-                                        <div class="product-name"><a href="#">Kabino Bedside Table</a></div>
+                                        <div class="price">
+                                            <label class="unit-price">10 000 000đ</label>
+                                            <label class="lable-mulx-minicart" style="color: #000;">x</label>                            
+                                            <a href="javascript:;" class="sign minus"><i class="fa fa-minus"></i></a>
+                                            <label class="quantity-mini-cart">1</label>                       
+                                            <a href="javascript:;" class="sign plus"><i class="fa fa-plus"></i></a>
+                                        </div>
+                                        <div class="product-name"><a href="#">OPPO F7 128 GB</a></div>
                                     </div>
-                                    <a href="javascript:;" class="remove">x</a>
+                                    <a href="javascript:;" class="remove-li">x</a>
                                 </li> 
-                                
                             </ul>
-                            <div class="subtotal">total:<span>$460.00</span></div>
+                            <div class="subtotal">Tổng<span>10 000 000 đ</span></div>
                             <div class="actions">
                                 <a href="shopping-cart.html" class="btn-process">XEM GIỎ HÀNG</a>
                                 <a href="checkout.html" class="btn-process btn-checkout">THANH TOÁN</a>
@@ -319,94 +325,94 @@
             <div class="product-cart shipping-process margin-bottom-20">
                 <table class="shop-table cart">
                     <thead>
-                    <tr>
-                        <th class="product-thumbnail">Hình ảnh</th>
-                        <th class="product-name">Tên sản phẩm</th>
-                        <th class="product-price">Giá</th>
-                        <th class="product-quantity">Số lượng</th>
-                        <th class="product-subtotal">Tổng</th>
-                        <th class="product-remove"><span class="remove none"><i class="fa fa-times"></i></span></th>
-                    </tr>
+                        <tr>
+                            <th class="product-thumbnail">Hình ảnh</th>
+                            <th class="product-name">Tên sản phẩm</th>
+                            <th class="product-price">Giá</th>
+                            <th class="product-quantity">Số lượng</th>
+                            <th class="product-subtotal">Tổng</th>
+                            <th class="product-remove"><span class="remove none"><i class="fa fa-times"></i></span></th>
+                        </tr>
                     </thead>
-                    <tbody>
-                    <tr class="cart-item">
-                        <td class="product-thumbnail" data-title="Image">
-                            <a href="#"><img class="thumb-item-cart" src="images/items1.jpg" alt="img"/></a>
-                        </td>
-                        <td class="product-name" data-title="Product Name">
-                            <a href="#">Apple The New MacBook Retina</a>
-                        </td>
-                        <td class="product-price" data-title="Price">
-                            <span class="price">19960000</span>
-                        </td>
-                        <td class="product-quantity" data-title="Quantity">
-                            <div class="quantity">
-                                <a href="#" class="sign minus"><i class="fa fa-angle-left"></i></a>
-                                <input type="text" id="quantity-cart" value="1" title="Qty" class="input-text qty text" size="1">
-                                <a href="#" class="sign plus"><i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </td>
-                        <td class="product-subtotal" data-title="Total">
-                            <span class="price">19000000</span>
-                        </td>
-                        <td class="product-remove">
-                            <a href="javascript:;" class="remove-item-cart"><i class="fa fa-times"></i></a>
-                        </td>
-                    </tr>
+                    <tbody id="list-item-cart">
+                        <tr class="cart-item">
+                            <td class="product-thumbnail" data-title="Image">
+                                <a href="#"><img class="thumb-item-cart" src="images/items1.jpg" alt="img"/></a>
+                            </td>
+                            <td class="product-name" data-title="Product Name">
+                                <a href="#">Apple The New MacBook Retina</a>
+                            </td>
+                            <td class="product-price" data-title="Price">
+                                <span class="price">19960000</span>
+                            </td>
+                            <td class="product-quantity" data-title="Quantity">
+                                <div class="quantity">
+                                    <a href="#" class="sign minus"><i class="fa fa-angle-left"></i></a>
+                                    <input type="text" id="quantity-cart" value="1" title="Qty" class="input-text qty text" size="1">
+                                    <a href="#" class="sign plus"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </td>
+                            <td class="product-subtotal" data-title="Total">
+                                <span class="price">19000000</span>
+                            </td>
+                            <td class="product-remove">
+                                <a href="javascript:;" class="remove-item-cart"><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
 
-                    <tr class="cart-item">
-                        <td class="product-thumbnail" data-title="Image">
-                            <a href="#"><img class="thumb-item-cart" src="images/items1.jpg" alt="img"/></a>
-                        </td>
-                        <td class="product-name" data-title="Product Name">
-                            <a href="#">Apple The New MacBook Retina</a>
-                        </td>
-                        <td class="product-price" data-title="Price">
-                            <span class="price">9690000</span>
-                        </td>
-                        <td class="product-quantity" data-title="Quantity">
-                            <div class="quantity">
-                                <a href="#" class="sign minus"><i class="fa fa-angle-left"></i></a>
-                                <input type="text" id="quantity-cart" value="2" title="Qty" class="input-text qty text" size="1">
-                                <a href="#" class="sign plus"><i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </td>
-                        <td class="product-subtotal" data-title="Total">
-                            <span class="price">17590000</span>
-                        </td>
-                        <td class="product-remove">
-                            <a href="javascript:;" class="remove-item-cart"><i class="fa fa-times"></i></a>
-                        </td>
-                    </tr>
+                        <tr class="cart-item">
+                            <td class="product-thumbnail" data-title="Image">
+                                <a href="#"><img class="thumb-item-cart" src="images/items1.jpg" alt="img"/></a>
+                            </td>
+                            <td class="product-name" data-title="Product Name">
+                                <a href="#">Apple The New MacBook Retina</a>
+                            </td>
+                            <td class="product-price" data-title="Price">
+                                <span class="price">9690000</span>
+                            </td>
+                            <td class="product-quantity" data-title="Quantity">
+                                <div class="quantity">
+                                    <a href="#" class="sign minus"><i class="fa fa-angle-left"></i></a>
+                                    <input type="text" id="quantity-cart" value="2" title="Qty" class="input-text qty text" size="1">
+                                    <a href="#" class="sign plus"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </td>
+                            <td class="product-subtotal" data-title="Total">
+                                <span class="price">17590000</span>
+                            </td>
+                            <td class="product-remove">
+                                <a href="javascript:;" class="remove-item-cart"><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
 
-                    <tr class="cart-item">
-                        <td class="product-thumbnail" data-title="Image">
-                            <a href="#"><img class="thumb-item-cart" src="images/items1.jpg" alt="img"/></a>
-                        </td>
-                        <td class="product-name" data-title="Product Name">
-                            <a href="#">AppleRetina</a>
-                        </td>
-                        <td class="product-price" data-title="Price">
-                            <span class="price">0</span>
-                        </td>
-                        <td class="product-quantity" data-title="Quantity">
-                            <div class="quantity">
-                                <a href="#" class="sign minus"><i class="fa fa-angle-left"></i></a>
-                                <input type="text" id="quantity-cart" value="1" title="Qty" class="input-text qty text" size="1">
-                                <a href="#" class="sign plus"><i class="fa fa-angle-right"></i></a>
-                            </div>
-                        </td>
-                        <td class="product-subtotal" data-title="Total">
-                            <span class="price">0</span>
-                        </td>
-                        <td class="product-remove">
-                           <a href="javascript:;" class="remove-item-cart"><i class="fa fa-times"></i></a>
-                        </td>
-                    </tr>
+                        <tr class="cart-item">
+                            <td class="product-thumbnail" data-title="Image">
+                                <a href="#"><img class="thumb-item-cart" src="images/items1.jpg" alt="img"/></a>
+                            </td>
+                            <td class="product-name" data-title="Product Name">
+                                <a href="#">AppleRetina</a>
+                            </td>
+                            <td class="product-price" data-title="Price">
+                                <span class="price">0</span>
+                            </td>
+                            <td class="product-quantity" data-title="Quantity">
+                                <div class="quantity">
+                                    <a href="#" class="sign minus"><i class="fa fa-angle-left"></i></a>
+                                    <input type="text" id="quantity-cart" value="1" title="Qty" class="input-text qty text" size="1">
+                                    <a href="#" class="sign plus"><i class="fa fa-angle-right"></i></a>
+                                </div>
+                            </td>
+                            <td class="product-subtotal" data-title="Total">
+                                <span class="price">0</span>
+                            </td>
+                            <td class="product-remove">
+                               <a href="javascript:;" class="remove-item-cart"><i class="fa fa-times"></i></a>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 <a href="#" class="btn-check">TIẾP TỤC MUA HÀNG</a>
-                <a href="#" class="btn-check update">CẬP NHẬP</a>
+                <a href="javascript:;" class="btn-check update">CẬP NHẬP</a>
             </div>
             <div class="shipping-checkout">
                 <div class="row">
@@ -428,7 +434,7 @@
 
                             <div class="box-select">
                                 <span class="shipping-label">Ước tính phí</span>
-                                <span class="price">34 000</span>
+                                <span class="price">34 000 đ</span>
                             </div>
                             <!-- <a href="#" class="btn-check process">GET A QUOCTE</a> -->
                         </div>
