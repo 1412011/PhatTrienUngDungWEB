@@ -1817,9 +1817,53 @@ th, td {
 .body-order .left-order{
     float: left;
 }
+.body-order .right-order{
+    padding-top: 5px;
+}
+.body-order .fa{
+    font-size: 30px;
+    color: #000;
+}
+.body-order .fa-check-circle-o{
+    font-size: 20px;
+    color:  blue;
+    position: absolute;
+    top: -5px;
+    visibility: hidden;
+}
+.body-order .fa-arrow-right{
+    font-size: 20px;
+    color:  blue;
+}
+.body-order .progress-order{
+    display: block;
+    margin-left: 10px;
+
+}
 .body-order .name-product-order{
     font-weight: bold;
     display: block;
+}
+.body-order .step-progress{
+    max-width: 80px;
+    text-align: center;
+}
+.body-order .icon-step{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: #cccccc;
+    padding-top: 10px;
+}
+.body-order .active-pro .icon-step {
+    background-color: orange;
+}
+.body-order .active-pro .fa-check-circle-o{
+     visibility: visible;
+     color: #00ff00;
+}
+.body-order .line-progress{
+    margin-top: 20px;
 }
 /* -----------------------END ACCOUNT-----------------------------*/
 /* -----------------------blog-homepage-----------------------------*/
