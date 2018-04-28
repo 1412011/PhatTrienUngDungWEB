@@ -301,6 +301,69 @@ body {
 }*/
 
 
-#DanhSachHienThi .col {
+#DanhSachHienThi .col,.DanhMuc .col {
 	margin-bottom: 30px;
+}
+
+.XemChiTiet {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 222px;
+	height: 222px;
+	text-align: center;
+	line-height: 222px;
+	background-color: #00000085;
+	font-size: 25px;
+	color: #fff;
+	opacity: 0;
+	text-decoration: none;
+	transition: all 500ms ease;
+}
+
+.XemChiTiet:hover {
+	opacity: 1;
+	color: #fff;
+	text-decoration: none;
+}
+
+.ChiTietSanPham {
+	width: 1170px;
+	margin: 50px auto;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.ChiTietGioHang {
+	width: 1200px;
+	margin: 50px auto;
+	background-color: #fff;
+	border-radius: 5px;
+}
+
+.PopupTaiKhoan {
+	position: absolute; 
+	top: 24px; 
+	right: 50px; 
+	width: 200px; 
+	background-color: #d22f64; 
+	border-radius: 2px; 
+	color: #fff;
+	display: none;
+}
+
+.PopupTaiKhoan .list-group-item-action:hover {
+    		background-color: #b72756;
+
+		}
+.PopupTaiKhoan  .list-group-item-action {
+	background-color: #d22f64;
+	color: #fff;
+}
+
+.DashboardAdmin {
+	float: left; 
+	width: 150px; 
+	height: 150px; 
+	margin: 10px;
 }

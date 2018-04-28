@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../images/icon.ico">
+	<title>Quản lý bán hàng - Trang chủ</title>
+	<link rel="stylesheet" type="text/css" href="../dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/css.css">
+	
+</head>
+<body style="background-color: #e9ebee;">
+	<div id="pre-header" class="pre-header">
+		<div id="phleft" class="phleft" style="float: left; padding-left: 10px;">
+			<div>LIÊN HỆ: <span style="color: #1467c1; font-weight: bold;">1800 8159</span> | Đề tài: điện thoại, máy tính bảng</div>
+		</div>
+		<div id="phright" class="phright" style="float: right; padding-right: 10px;">
+			<a href="DaDangNhap-QuanLyGioHang.html">Giỏ hàng của tôi <img src="../images/cart2.png">(<span id="SoLuongHang">0</span>)</a>
+			<span>| Xin chào, <span id="TaiKhoan" style="color: #0056b3; cursor: pointer;">Nguyễn Hoàng Anh &#9776;</span></span>
+			<div class="PopupTaiKhoan" id="PopupTaiKhoan">
+				<div class="list-group">
+				  <a href="CapNhatThongTin.html" class="list-group-item list-group-item-action"><i>Cập nhật thông tin</i></a>
+				  <a href="LichSuGiaoDich.html" class="list-group-item list-group-item-action"><i>Xem lịch sử giao dịch</i></a>
+				  <a href="#" class="list-group-item list-group-item-action"><i>Sản phẩm yêu thích</i></a>
+				  <a href="#" class="list-group-item list-group-item-action"><i>Điểm thưởng</i></a>
+				  <a href="../index.html" class="list-group-item list-group-item-action"><b>Đăng xuất</b></a>
+				</div>
+			</div>
+			<a href=""><img src="../images/English.png" style="margin-left: 15px; width: 24px; height: 16px;"></a>
+		</div>
+	</div>
+	<div id="header" class="header">
+		<div class="row">
+			<div class="col-2 logoBox">
+				<a href="DaDangNhap-index.html" title="home">
+					<img src="../images/logo.png" id="AnhLogo" class="AnhLogo">
+				</a>
+			</div>
+			<div class="col">
+				<ul id="NavBar" class="NavBar">
+					<li>
+						<a href="DaDangNhap-index.html" class="Menu">TRANG CHỦ</a>
+					</li>
+					<li style="position: relative;">
+						<a href="" class="Menu">HIỂN THỊ THEO</a>
+						<ul class="submenu">
+							<li style="background-color: rgba(68,82,97,0.9); height: 50px; line-height: 50px;"><a href="DaDangNhap-XemTheoLoai.html" style="font-size: 18px;">LOẠI SẢN PHẨM</a></li>
+							<li style="background-color: rgba(68,82,97,0.9); height: 50px; line-height: 50px;"><a href="DaDangNhap-XemTheoNSX.html" style="font-size: 18px;">NHÀ SẢN XUẤT</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="" class="Menu">LIÊN HỆ</a>
+					</li>
+				</ul>
+			</div>
+			<div id="NavbarSearch" class="col-3 NavbarSearch">
+				<form class="form-inline">
+			    	<input class="form-control mr-sm-2" type="search" placeholder="Tìm kiếm" aria-label="Search">
+			    	<button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+			  </form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid" style="padding-top: 99px;">
+		<div class="col">
+			<div class="row ChiTietGioHang" style="background-color: transparent;">
+				<div class="col-9">
+					<div style="background-color: #4576ab;font-size: 32px;color: #fff;padding-left: 20px;">GIỎ HÀNG</div>
+					<div class="content" style="background-color: #fff; border: solid 2px #4576ab;">
+						<table class="table">
+						  <thead>
+						    <tr>
+						      <th scope="col">SẢN PHẨM</th>
+						      <th scope="col">GIÁ</th>
+						      <th scope="col">SỐ LƯỢNG</th>
+						      <th scope="col">THÀNH TIỀN</th>
+						      <th scope="col"></th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">
+						      	<img style="width: 150px; height: 150px;" src="../images/sanpham/sp3.png">
+						      	<span style="font-size: 20px;">Ipad Pro Mini</span>
+						      </th>
+						      <td style="line-height: 150px;">25.990.000 VNĐ</td>
+						      <td style="line-height: 150px;"><input style="margin-top: 55px" type="number" class="form-control" name="" min="0" value="1" onchange="TinhTien()"></td>
+						      <td style="line-height: 150px;">25.990.000 VNĐ</td>
+						      <td style="line-height: 150px;"><img class="XoaGioHang" style="cursor: pointer; width: 20px; height: 20px; border: solid 1px #0000003b;" src="../images/icon-x.png"></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">
+						      	<img style="width: 150px; height: 150px;" src="../images/sanpham/sp1.png">
+						      	<span style="font-size: 20px;">iPhone X</span>
+						      </th>
+						      <td style="line-height: 150px;">19.890.000 VNĐ</td>
+						      <td style="line-height: 150px;"><input style="margin-top: 55px" type="number" class="form-control" name="" min="0" value="1" onchange="TinhTien()"></td>
+						      <td style="line-height: 150px;">19.890.000 VNĐ</td>
+						      <td style="line-height: 150px;"><img class="XoaGioHang" style="cursor: pointer; width: 20px; height: 20px; border: solid 1px #0000003b;" src="../images/icon-x.png"></td>
+						    </tr>
+						    <tr>
+						      <th scope="row">
+						      	<img style="width: 150px; height: 150px;" src="../images/sanpham/sp6.png">
+						      	<span style="font-size: 20px;">Galaxy S8 Plus</span>
+						      </th>
+						      <td style="line-height: 150px;">7.990.000 VNĐ</td>
+						      <td style="line-height: 150px;"><input style="margin-top: 55px" type="number" class="form-control" name="" min="0" value="1" onchange="TinhTien()"></td>
+						      <td style="line-height: 150px;">7.990.000 VNĐ</td>
+						      <td style="line-height: 150px;"><img class="XoaGioHang" style="cursor: pointer; width: 20px; height: 20px; border: solid 1px #0000003b;" src="../images/icon-x.png"></td>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+				<div class="col-3">
+					<div style="background-color: #4576ab;font-size: 32px;color: #fff;padding-left: 20px;">TỔNG</div>
+					<div class="content" style="background-color: #fff; border: solid 2px #4576ab; height: 200px;">
+						<div style="padding: 15px;">
+							<span>Tạm tính:</span><strong style="float: right;">62.023.000 VNĐ</strong>
+						</div>
+						<div style="border-top: solid 1px #0000003b; padding: 15px;">
+							<span>Thành tiền:</span><strong style="float: right; color: #fe3834; font-size: 18px;">62.023.000 VNĐ</strong>
+						</div>
+					</div>
+					<button style="width: 100%; margin-top: 10px;" type="button" class="btn btn-warning">Tiến hành đặt hàng</button>
+				</div>
+
+			</div>
+			<div class="DanhMuc" style="margin: auto 70px;">
+				<div class="TenDanhMuc" style="border-bottom: 30px solid #23428f;"><div class="Name">Có thể bạn quan tâm</div></div>
+				<hr style="margin-top: 0; border-top: 2px solid #23428f;">
+				<div class="row">
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp36.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">Huawei MediaPad</h6>
+						    <p class="card-text">Huawei</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp35.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">HTC One A9S</h6>
+						    <p class="card-text">HTC</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp34.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">Điện thoại iPhone 8</h6>
+						    <p class="card-text">Apple</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp33.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">Galaxy Note</h6>
+						    <p class="card-text">Samsung</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp32.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">Xperia XZ Premium</h6>
+						    <p class="card-text">Sony</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="DanhMuc" style="margin: auto 70px;">
+				<div class="TenDanhMuc" style="border-bottom: 30px solid #e83e8c;"><div class="Name">Giá tốt mỗi ngày</div></div>
+				<hr style="margin-top: 0; border-top: 2px solid #e83e8c;">
+				<div class="row">
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp31.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">Sony Xperia XZ1</h6>
+						    <p class="card-text">Sony</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp30.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">Galaxy S8 Plus</h6>
+						    <p class="card-text">Samsung</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp29.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">Galaxy Tab A6</h6>
+						    <p class="card-text">Samsung</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp28.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">HTC U Ultra</h6>
+						    <p class="card-text">HTC</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card" style="width: 12rem;">
+						  <img style="position: relative;" class="card-img-top" src="../images/sanpham/sp27.png" alt="Card image cap">
+						  <a href="DaDangNhap-XemChiTiet2.html" class="XemChiTiet" style="width: 190px; height: 190px; line-height: 190px">Xem chi tiết</a>
+						  <div class="card-body">
+						    <h6 class="card-title">iPad Mini 4</h6>
+						    <p class="card-text">Apple</p>
+						    <hr>
+						    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-10">Copyleft <span style="display:inline-block; transform: rotate(180deg);">&copy;</span> 2017-2018 Nguyen Thanh Hau &amp; Nguyen Hoang Anh | Phát triển ứng dụng web@student.hcmus.edu.vn</div>
+		</div>
+	</div>
+	
+	<script type="text/javascript" src="../dist/jquery/jquery.slim.min.js"></script>
+	<script type="text/javascript" src="../dist/popper/popper.js"></script>
+	<script type="text/javascript" src="../dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../assets/js/js.js"></script>
+	<script type="text/javascript">
+		function ThemVaoGioHang() {
+			var SL = parseInt($("#SoLuongHang").text());
+			SL = SL + 1;
+			SL = SL.toString();
+			$("#SoLuongHang").text(SL);
+		}
+
+		function TinhTien() {
+			alert("hello")
+		}
+
+		$(".XoaGioHang").click(function(){
+			$(this).parent().parent().remove();
+		});
+	</script>
+</body>
+</html>

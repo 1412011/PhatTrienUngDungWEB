@@ -12,6 +12,10 @@ window.onscroll = function() {
                 $("#CotCategory").addClass("CotCategory-fixed");
             }
 
+            if (document.documentElement.scrollTop > 40) {
+                $("#CotCategory2").addClass("CotCategory-fixed");
+            }
+
     		if (document.documentElement.scrollTop < 10) {
                 $("#pre-header").addClass("pre-header").removeClass("pre-header-fixed");
                 $("#header").addClass("header").removeClass("header-fixed");
@@ -23,5 +27,18 @@ window.onscroll = function() {
             if (document.documentElement.scrollTop < 348) {
                 $("#CotCategory").removeClass("CotCategory-fixed");
             }
+
+            if (document.documentElement.scrollTop < 40) {
+                $("#CotCategory2").removeClass("CotCategory-fixed");
+            }
 		};
 
+$(document).ready(function(){
+    $("#TaiKhoan").click(function(){
+        $("#PopupTaiKhoan").toggle();
+    });
+
+    $("#TaiKhoanEmail").click(function(){
+        $("#subTaiKhoanEmail").toggle();
+    });
+});
