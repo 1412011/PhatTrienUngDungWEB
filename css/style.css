@@ -6211,6 +6211,9 @@ blockquote span{
     background: transparent;
     padding: 8px 15px 8px 8px;
 }
+.hide-div{
+    display: none;
+}
 /*header-style4*/
 .header.style4 .main-header .box-items-right{
     text-align: right;

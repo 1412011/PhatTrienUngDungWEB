@@ -143,9 +143,20 @@ $('document').ready(function(){
     todayHighlight: true 
     }).datepicker('update', new Date());
 
-    $('a.show-more-a').on('click',function(){
-        $('li.hide-show').toggleClass('item-hidden');
+    $('button.submit-login').on('click',function(){
+        var user = $('.form-login-input form :text').val();
+        var pass = $('.form-login-input form :password').val();
+
+        if(user === 'user1' && pass === '123'){  
+          $('.box-items-right .dropdown').toggleClass('hide-div');
+          $('.box-items-right .login-register').toggleClass('hide-div');
+          $('button.submit-login').attr('data-dismiss','modal');
+        }else{
+          $('button.submit-login').removeAttr('data-dismiss');
+        }
     });
+      
+    
 
 });
 
