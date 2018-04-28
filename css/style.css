@@ -1160,7 +1160,10 @@ th, td {
     float: left;
 }
 .left-sidebar .content-area{
-    float:right;
+    float:left;
+}
+.left-sidebar .right-side{
+    float: right;
 }
 
 .left-sidebar .detail-product-more{
@@ -1256,6 +1259,9 @@ th, td {
 }
 .black-version .button-search:before{
     display: none;
+}
+.button-search:hover{
+    color: #fff
 }
 .add-to-cart-detail:hover{
     background-color: #1467c1;
@@ -5911,7 +5917,7 @@ blockquote span{
     width: 100%;
 }
 .main-header{
-    padding: 34px 0;
+    padding: 20px 0;
 }
 .main-header>*{
     display: table-cell;
@@ -5975,6 +5981,7 @@ blockquote span{
     width: 170px;
 }
 .button-search{
+    color: #fff;
     position: absolute;
     top: 0;
     right: 0;
@@ -6046,7 +6053,7 @@ blockquote span{
     display: block;
 }
 .main-menu .submenu .items-child-1 a{
-    font-size: 13px;
+    font-size: 14px;
     padding: 0px 0px 0px 10px;
 }
 .main-menu .megamenu .items-child-1{
@@ -6200,7 +6207,7 @@ blockquote span{
 }
 .header.style2 .button-search{
     font-size: 16px;
-    color: #252525;
+    color: #fff;
     background: transparent;
     padding: 8px 15px 8px 8px;
 }
@@ -6376,7 +6383,7 @@ blockquote span{
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
 .megamenu{
-    max-width:600px;
+    max-width:400px;
 }
 .megamenu2{
     max-width:1092px;
@@ -7166,6 +7173,7 @@ blockquote span{
 }
 .box-slider .m-text{
     font-size: 14px;
+    color: #09dee5 !important;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-weight: 500;
@@ -7173,13 +7181,13 @@ blockquote span{
 }
 .box-slider .p-text{
     font-size: 14px;
-    color: #4c4c4c;
+    color:#09dee5;
     margin-bottom: 19px;
 }
 .box-slider .b-text{
     font-size: 60px;
-    color: #191919;
-    font-weight: 500;
+    color: #fff;
+    font-weight: bold;
     margin-bottom: 22px;
 }
 .box-slider .price{
@@ -7189,30 +7197,33 @@ blockquote span{
 }
 .box-slider .price del{
     font-size: 16px;
-    color: #4c4c4c;
+    color: #1467c1;
 }
 .box-slider.opt-3{
     padding-left: 270px;
 }
 .box-slider.opt-3 .item-slide{
-    background-image: url("../images/slider-3-1.jpg");
+    background-image: url("../images/imgs/slider-samsungs9.png");
     height: 550px;
 }
 .box-slider.opt-3 .item-slide.item-2{
-    background-image: url("../images/slider-3-2.jpg");
+    background-image: url("../images/imgs/slider-iphone-red.png");
 }
 .box-slider.opt-3 .item-slide.item-3{
-    background-image: url("../images/slider-3-3.jpg");
+    background-image: url("../images/imgs/slider-nokia8.jpg");
 }
 .box-slider.opt-4 .item-slide{
-    background-image: url("../images/slider-4-1.jpg");
+    background-image: url("../images/imgs/slider-samsungs9.png");
     height: 530px;
 }
 .box-slider.opt-4 .item-slide.item-2{
-    background-image: url("../images/slider-4-2.jpg");
+    background-image: url("../images/imgs/slider-nokia8.jpg");
 }
 .box-slider.opt-4 .item-slide.item-3{
-    background-image: url("../images/slider-4-3.jpg");
+    background-image: url("../images/imgs/slider-iphone-red.png");
+}
+.box-slider.opt-4 .item-slide.item-4{
+    background-image: url("../images/imgs/slider-sony.jpg");
 }
 .box-slider.opt-4 + .box-banner-slider{
     width: 280px;

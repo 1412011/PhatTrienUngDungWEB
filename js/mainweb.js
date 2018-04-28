@@ -9,7 +9,7 @@ $('document').ready(function(){
     var item_quantity = 1;
     var li_item = `
                     <li class="item">
-                      <a href="#" class="product-media"><img src="images/mn1.jpg" alt="img"></a>
+                      <a href="#" class="product-media"><img src="images/imgs/oppo-f5-0.png" alt="img"></a>
                       <div class="product-info">
                           <div class="price">
                               <label class="unit-price">10 000 000đ</label>
