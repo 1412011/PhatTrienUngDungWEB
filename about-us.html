@@ -60,31 +60,31 @@
                                 <div class="col-sm-6">
                                     <div class="custommenu">
                                         <ul class="menu">
-                                            <li class="menu-item"><a href="shop-grid.html">ĐIỆN THOẠI</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; APPLE - IPhone</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SAMSUNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; HTC</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SONY</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; NOKIA</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; OPPO</a></li>
+                                            <li class="menu-item"><a href="shop-grid-dt.html">ĐIỆN THOẠI</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; APPLE - IPhone</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; SAMSUNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; HTC</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; SONY</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; NOKIA</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-dt.html">&rsaquo; OPPO</a></li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="custommenu">
                                         <ul class="menu">
-                                            <li class="menu-item"><a href="shop-categories.html">MÁY TÍNH BẢNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; APPLE - IPad</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; SAMSUNG</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; HUAWEI</a></li>
-                                            <li class="menu-item items-child-1"><a href="shop-grid.html">&rsaquo; LENOVO</a></li>
+                                            <li class="menu-item"><a href="shop-grid-mtb.html">MÁY TÍNH BẢNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; APPLE - IPad</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; SAMSUNG</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; HUAWEI</a></li>
+                                            <li class="menu-item items-child-1"><a href="shop-grid-mtb.html">&rsaquo; LENOVO</a></li>
                                         </ul>
                                     </div> 
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="menu-item menu-item-has-children"><a href="index.html" class="kt-item-title" title="PAGES">Liên hệ</a>
+                   <li class="menu-item menu-item-has-children"><a href="pages/admin-order.html" class="kt-item-title" title="PAGES">ADMIN</a>
                     </li>
                 </ul>
             </div>
@@ -114,13 +114,6 @@
                                     <div class="form-input">
                                         <input type="password" class="form-control" placeholder="Mật khẩu">
                                     </div>
-
-                                    <!-- <div class="form-group">
-                                        <div class="g-recaptcha" data-sitekey="" data-callback="verifyRecaptchaCallback" data-expired-callback="expiredRecaptchaCallback"></div>
-                                        <input class="form-control d-none" data-recaptcha="true" required data-error="Please complete the Captcha">
-                                        <div class="help-block with-errors"></div>
-                                    </div> -->
-
                                     <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Ghi nhớ</label>
                                     </div>
@@ -132,7 +125,7 @@
                                         <a class="register" data-dismiss="modal" data-toggle="modal" href="#modal-register">Đăng ký tài khoản mới</a>
                                     </div>
                                     <div class="fg-pass">
-                                        <a class="forget-password" href="">Quên mật khẩu</a>
+                                        <a class="forget-password" href="#modal-foget-pass" data-dismiss="modal" data-toggle="modal">Quên mật khẩu</a>
                                     </div>
                                 </form>
                             </div>                                
@@ -147,6 +140,38 @@
         <!-- modal register -->
         <div class="container">
             <!-- Modal -->
+            <div class="modal fade" id="modal-foget-pass" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="close-modal-x">
+                                <a data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span></a>
+                            </div>
+                            <h3 class="header-title-modal">Khôi phục mật khẩu ở Smart Store</h3>
+                            <div class="form-login-input">
+                                <form>
+                                    <p>Điền Email tài khoản để đổi mật khẩu mới</p>
+                                    <div class="form-input">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+
+                                    <p class="form-submit">
+                                        <button type="button" class="btn btn-default submit-login" data-dismiss="modal">Gửi mail</button>
+                                    </p>
+
+                                </form>
+                            </div>                                
+                        </div>
+                      
+                    </div> <!-- modal content -->
+                 
+                </div>
+            </div>
+        </div> <!-- end modal register -->
+
+        <!-- modal register -->
+        <div class="container">
+            <!-- Modal -->
             <div class="modal fade" id="modal-register" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
@@ -154,7 +179,7 @@
                             <div class="close-modal-x">
                                 <a data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times" aria-hidden="true"></i></span></a>
                             </div>
-                            <h3 class="header-title-modal">Đăng ký SmartMarket</h3>
+                            <h3 class="header-title-modal">Đăng ký Smart Store</h3>
                             <div class="form-login-input">
                                 <form>
                                     <div class="form-input">
@@ -165,6 +190,9 @@
                                     </div>
                                     <div class="form-input">
                                         <input type="password" class="form-control" placeholder="Nhập lại Mật khẩu">
+                                    </div>
+                                    <div class="g-recaptcha" data-sitekey="6LdrEVYUAAAAAIW-wRsQhJiSJlOPmKMqvagwbiuX">
+                                        
                                     </div>
                                    <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Chấp nhận <a class="a-txt-gach-chan" href="">điều khoản</a> của SmartMarket</label>
@@ -191,8 +219,8 @@
                 </div>
                 <div class="vertical-menu-content">
                     <ul class="vertical-menu-items">
-                        <li class="menu-item"><a href="shop-grid.html"><i class="fa fa-mobile"></i>Điện thoại</a></li>
-                        <li class="menu-item"><a href="shop-grid.html"><i class="fa fa-tablet"></i>Máy tính bảng</a></li>
+                        <li class="menu-item"><a href="shop-grid-dt.html"><i class="fa fa-mobile"></i>Điện thoại</a></li>
+                        <li class="menu-item"><a href="shop-grid-mtb.html"><i class="fa fa-tablet"></i>Máy tính bảng</a></li>
                     </ul>
                 </div>
             </div>
@@ -271,13 +299,10 @@
                     <nav class="breadcrumb-trail breadcrumbs">
                         <ul class="trail-items">
                             <li class="trail-item trail-begin">
-                                <a href="#"><span>Home</span></a>
-                            </li>
-                            <li class="trail-item trail-begin">
-                                <a href="#"><span>Page</span></a>
+                                <a href="#"><span>Trang chủ</span></a>
                             </li>
                             <li class="trail-item trail-end">
-                                <span>About Us</span>
+                                <a href="#"><span>Giới thiệu</span></a>
                             </li>
                         </ul>
                     </nav>
@@ -288,78 +313,36 @@
             <div class="about-us-content">
                 <div class="banner-about-us full-width margin-bottom-50">
                     <div class="banner-us-content">
-                        <h3>Wellcome To SmartMarket</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                        <h3>Chào mừng đến với Smart Store</h3>
+                        <p>Đây là của hàng mua bán điện thoại hàng đầu thế giới. Với hơn 100 chi nhánh  lớn nhỏ khắp mọi nơi. Đến với chúng tôi các bạn sẽ được phục vụ những dịch vụ sản phẩm tuyệt vời nhất.</p>
                     </div>
                 </div>
                 <div class="about-choose margin-bottom-40">
                     <div class="row">
                         <div class="col-sm-6">
-                            <iframe width="600" height="445" src="https://www.youtube.com/embed/T5OGuh2YBeQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-                        </div>
-                        <div class="col-sm-6">
-                            <h3 class="title">Why Choose Us?</h3>
+                            <h3 class="title">Thông tin chung</h3>
                             <div class="about-content">
                                 <div class="box-content">
                                     <div class="items-parent">
-                                        <div class="arrow-items">How do I become an author?</div>
+                                        <div class="arrow-items">Tác giả</div>
                                         <div class="children">
-                                            <p>The graphical control element accordion is a vertically stacked list of items, such as labels or thumbnails. Each item can be "expanded" or "stretched" to reveal the content associated with that item.</p>
+                                            <p>Sinh viên Nguyễn Hoàng Anh - 1412011</p>
                                         </div>
                                     </div>
                                     <div class="items-parent">
-                                        <div class="arrow-items">Is my license transferable?</div>
+                                        <div class="arrow-items">Giấy phép kinh doanh</div>
                                         <div class="children">
-                                            <p>The graphical control element accordion is a vertically stacked list of items, such as labels or thumbnails. Each item can be "expanded" or "stretched" to reveal the content associated with that item.</p>
+                                            <p>E102</p>
                                         </div>
                                     </div>
                                     <div class="items-parent">
-                                        <div class="arrow-items">What do you mean by item and end product?</div>
+                                        <div class="arrow-items">Sản phẩm</div>
                                         <div class="children">
-                                            <p>The graphical control element accordion is a vertically stacked list of items, such as labels or thumbnails. Each item can be "expanded" or "stretched" to reveal the content associated with that item.</p>
-                                        </div>
-                                    </div>
-                                    <div class="items-parent">
-                                        <div class="arrow-items">Am I allowed to modify the item that I purchased?</div>
-                                        <div class="children">
-                                            <p>The graphical control element accordion is a vertically stacked list of items, such as labels or thumbnails. Each item can be "expanded" or "stretched" to reveal the content associated with that item.</p>
+                                            <p>Điện thoại, Máy tính bảng</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="map margin-bottom-40">
-                    <img src="images/map.jpg" alt="img">
-                </div>
-                <div class="row">
-                    <div class="about-info">
-                    <div class="col-sm-4 margin-bottom-30">
-                        <div class="about-info-content">
-                            <h3 class="title">France</h3>
-                            <p>40 Baria Sreet 133/2 NewYork City, US<br>
-                                Email: info.contact@gmail.com<br>
-                                Phone: 123-456-7890
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 margin-bottom-30">
-                        <div class="about-info-content">
-                            <h3 class="title">United States</h3>
-                            <p>40 Baria Sreet 133/2 NewYork City, US<br>
-                                Email: info.contact@gmail.com<br>
-                                Phone: 123-456-7890
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 margin-bottom-30">
-                        <div class="about-info-content">
-                            <h3 class="title">Viet Nam</h3>
-                            <p>40 Baria Sreet 133/2 NewYork City, US<br>
-                                Email: info.contact@gmail.com<br>
-                                Phone: 123-456-7890
-                            </p>
                         </div>
                     </div>
                 </div>
@@ -369,15 +352,16 @@
         <div class="container">
             <div class="brand-slide">
                 <div class="owl-carousel nav-style-1" data-nav="false" data-autoplay="false" data-dots="false" data-loop="true" data-margin="0" data-responsive='{"0":{"items":2},"480":{"items":3},"640":{"items":4},"991":{"items":6}}'>
-                    <a href="#"><img src="images/brand1.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand2.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand3.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand4.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand5.jpg" alt="brand"></a>
-                    <a href="#"><img src="images/brand6.jpg" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-apple.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-samsung.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-htc.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-sony.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-oppo.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-huawei.png" alt="brand"></a>
+                    <a href="#"><img src="images/imgs/logo-lenovo.png" alt="brand"></a>
                 </div>
             </div>
-        </div>
+        </div> 
     </div>
 </div>
 <footer class="footer footer-style-1">
@@ -387,17 +371,17 @@
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-5">
                     <div class="logo-footer">
                         <a href="index.html">
-                            <img src="images/logo-footer.png" alt="img">
+                            <img src="images/imgs/logo2-footer.png" alt="img">
                         </a>
                     </div>
                     <div class="footer-infomation">
-                        <p>101 E 129th St, East Chicago,<br>
-                            IN 46312, US</p>
-                        <p>Phone: 001-1234-88888</p>
-                        <p>Email: Kutethemes@gmail.com</p>
+                        <p>I82 Nguyễn Văn Cừ, <br>
+                            Quận 5, TPHCM</p>
+                        <p>Điện thoại: 0981333497</p>
+                        <p>Email: nghanh.ittn@gmail.com</p>
                     </div>
                     <div class="social-footer">
-                        <span class="social-text">GET IN TOUCH !</span>
+                        <span class="social-text">Liên lạc</span>
                         <ul class="socials">
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
                             <li><a href="#"><i class="fa fa-rss"></i></a></li>
@@ -409,43 +393,31 @@
                 </div>
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-3">
                     <div class="menu-footer">
-                        <h3 class="title-footer">Find It Fast</h3>
+                        <h3 class="title-footer">Tìm nhanh</h3>
                         <ul class="menu">
-                            <li class="menu-item"><a href="#">Laptop $ Computers</a></li>
-                            <li class="menu-item"><a href="#">Smart Phone & Tablets</a></li>
-                            <li class="menu-item"><a href="#">TV & Audio</a></li>
-                            <li class="menu-item"><a href="#">Cameras & Photography</a></li>
-                            <li class="menu-item"><a href="#">Gadgets</a></li>
-                            <li class="menu-item"><a href="#">Car Electronic & GP5</a></li>
-                            <li class="menu-item"><a href="#">Accesories</a></li>
+                            <li class="menu-item"><a href="#">Điện thoại</a></li>
+                            <li class="menu-item"><a href="#">Máy tính bảng</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-2">
                     <div class="menu-footer">
-                        <h3 class="title-footer">Information</h3>
+                        <h3 class="title-footer">Thông tin</h3>
                         <ul class="socials">
-                            <li class="menu-item"><a href="#">Find a Store</a></li>
-                            <li class="menu-item"><a href="#">About Us</a></li>
-                            <li class="menu-item"><a href="#">Contact Us</a></li>
-                            <li class="menu-item"><a href="#">Delivery information</a></li>
-                            <li class="menu-item"><a href="#">Privacy Policy</a></li>
-                            <li class="menu-item"><a href="#">Terms & Conditions</a></li>
-                            <li class="menu-item"><a href="#">Gift Cards</a></li>
+                            <li class="menu-item"><a href="#">Giới thiệu</a></li>
+                            <li class="menu-item"><a href="#">Liên hệ</a></li>
+                            <li class="menu-item"><a href="#">Thông tin giao hàng</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="col-ts-12 col-xs-6 col-sm-6 col-md-2">
                     <div class="menu-footer">
-                        <h3 class="title-footer">Customer Care</h3>
+                        <h3 class="title-footer">Khách hàng</h3>
                         <ul class="socials">
-                            <li class="menu-item"><a href="#">My Account</a></li>
-                            <li class="menu-item"><a href="#">Order History</a></li>
-                            <li class="menu-item"><a href="#">Wishlist</a></li>
-                            <li class="menu-item"><a href="#">Customer Service</a></li>
-                            <li class="menu-item"><a href="#">Returns / Exchange</a></li>
-                            <li class="menu-item"><a href="#">FAQs</a></li>
-                            <li class="menu-item"><a href="#">Product Support</a></li>
+                            <li class="menu-item"><a href="#">Tài khoản</a></li>
+                            <li class="menu-item"><a href="#">Đơn hàng</a></li>
+                            <li class="menu-item"><a href="#">Yêu thích</a></li>
+                            <li class="menu-item"><a href="#">Hỗ trợ</a></li>
                         </ul>
                     </div>
                 </div>
@@ -456,13 +428,13 @@
                 <div class="newsletter-form-wrap">
                     <div class="newsletter-form">
                         <div class="title-label-newsletter">
-                            <span class="label-b">Sign Up to <span>News letter</span></span>
-                            <span class="label-s">Subscribe our newsletter gor get notification about information discount.</span>
+                            <span class="label-b">Đăng ký nhận <span>Tin tức mới</span></span>
+                            <span class="label-s">Đăng ký để có những món hàng giảm giá hay hàng mới nhất</span>
                         </div>
                         <form method="post" action="#" class="form-newsletter">
                             <div class="newsletter-content">
-                                <input type="email" name="email" placeholder="Your email address">
-                                <button class="submit-button" type="submit">SUBSCRIBE</button>
+                                <input type="email" name="email" placeholder="Địa chỉ Email">
+                                <button class="submit-button" type="submit">ĐĂNG KÝ NGAY</button>
                             </div>
                         </form>
                     </div>
