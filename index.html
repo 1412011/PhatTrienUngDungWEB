@@ -36,7 +36,7 @@
 						<a href="" class="Menu">HIỂN THỊ THEO</a>
 						<ul class="submenu">
 							<li style="background-color: rgba(68,82,97,0.9); height: 50px; line-height: 50px;"><a href="subsites/XemTheoLoai.html" style="font-size: 18px;">LOẠI SẢN PHẨM</a></li>
-							<li style="background-color: rgba(68,82,97,0.9); height: 50px; line-height: 50px;"><a href="" style="font-size: 18px;">NHÀ SẢN XUẤT</a></li>
+							<li style="background-color: rgba(68,82,97,0.9); height: 50px; line-height: 50px;"><a href="subsites/XemTheoNSX.html" style="font-size: 18px;">NHÀ SẢN XUẤT</a></li>
 						</ul>
 					</li>
 					<li>
@@ -80,7 +80,531 @@
 		    <span class="sr-only">Next</span>
 		  </a>
 		</div>
-		
+		<div class="row" style="margin-top: 50px;">
+			<div class="col-2">
+				<div id="CotCategory" class="row" style="padding-left: 12px;">
+					<div class="card border-secondary" style="width: 212.83px">
+					    <div class="card-header">LOẠI SẢN PHẨM</div>
+					    <div class="list-group">
+						  <a href="#" class="list-group-item list-group-item-action active"><img src="images/phone.png" style="width: 20px; height: 20px; margin-right: 5px;">Điện thoại, Tablet (649)</a>
+						  <a href="#" class="list-group-item list-group-item-action"><img src="images/laptop.png" style="width: 20px; height: 20px; margin-right: 5px;">Laptop (1044)</a>
+						  <a href="#" class="list-group-item list-group-item-action"><img src="images/camera.png" style="width: 20px; height: 20px; margin-right: 5px;">Máy ảnh số (44)</a>
+						  <a href="#" class="list-group-item list-group-item-action"><img src="images/balo.png" style="width: 20px; height: 20px; margin-right: 5px;">Ba lô, túi xách (652)</a>
+						  <a href="#" class="list-group-item list-group-item-action"><img src="images/book.png" style="width: 20px; height: 20px; margin-right: 5px;">Sách báo, tạp chí (214)</a>
+						  <a href="#" class="list-group-item list-group-item-action"><img src="images/car.png" style="width: 20px; height: 20px; margin-right: 5px;">Xe hơi (25)</a>
+						  <a href="#" class="list-group-item list-group-item-action"><img src="images/ruou.png" style="width: 20px; height: 20px; margin-right: 5px;">Rượu (128)</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-10">
+				<!-- start Modal Giá -->
+						<div class="modal fade" id="ThemVaoGioHangModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+						  <div class="modal-dialog" role="document">
+						    <div class="modal-content">
+						      <div class="modal-header">
+						        <h5 class="modal-title" id="exampleModalLabel">Thông báo đăng nhập</h5>
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						          <span aria-hidden="true">&times;</span>
+						        </button>
+						      </div>
+						      <div class="modal-body">
+						        Vui lòng <a href="subsites/DangNhap.html">Đăng nhập</a> trước khi mua hàng!<br>Chưa có tài khoản? <a href="subsites/DangKi.html">Đăng kí</a> ngay
+						      </div>
+						    </div>
+						  </div>
+						</div>
+						<!-- end Modal Giá -->
+				<div class="DanhMuc">
+					<div class="TenDanhMuc" style="border-bottom: 30px solid #23428f;"><div class="Name">Mới nhất</div></div>
+					<hr style="margin-top: 0; border-top: 2px solid #23428f;">
+					<div class="row">
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp1.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Iphone X</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">34.790.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp2.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">HTC 10 evo</h5>
+							    <p class="card-text">HTC</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">4.790.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp3.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">
+Máy tính bảng iPad</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">9.790.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp4.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">HTC U Ultra</h5>
+							    <p class="card-text">HTC</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">10.299.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp5.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Galaxy Tab A6</h5>
+							    <p class="card-text">Samsung</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">3.590.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp6.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Galaxy S8 Plus</h5>
+							    <p class="card-text">Samsung</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">17.890.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp7.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Sony Xperia XZ1</h5>
+							    <p class="card-text">Sony</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">13.700.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp8.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Xperia XZ Premium</h5>
+							    <p class="card-text">Sony</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">15.260.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp9.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Galaxy Note</h5>
+							    <p class="card-text">Samsung</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">22.170.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp10.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Điện thoại iPhone 8</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">28.169.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp11.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Điện thoại HTC One</h5>
+							    <p class="card-text">HTC</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">3.710.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp12.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Tablet Huawei</h5>
+							    <p class="card-text">Huawei</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">2.050.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="DanhMuc">
+					<div class="TenDanhMuc" style="border-bottom: 30px solid #fd7e14"><div class="Name">Bán chạy nhất</div></div>
+					<hr style="margin-top: 0; border-top: 2px solid #fd7e14;">
+					<div class="row">
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp13.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">iPhone 6s</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">4.799.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp14.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Điên thoại OPPO F7</h5>
+							    <p class="card-text">Oppo</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">7.790.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp15.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">HTC 10 evo</h5>
+							    <p class="card-text">HTC</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">4.798.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp16.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">HTC U Ultra</h5>
+							    <p class="card-text">HTC</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">8.999.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp17.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Điện thoại iPhone 7</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">2.799.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp18.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Glaxy S8 Plus</h5>
+							    <p class="card-text">Samsung</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">4.399.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp19.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">HTC U Ultra </h5>
+							    <p class="card-text">Sony</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">2.799.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp20.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Xperia XZ Premium</h5>
+							    <p class="card-text">Sony</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">4.750.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp21.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Nokia 7 Plus</h5>
+							    <p class="card-text">Nokia</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">9.790.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp22.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">iPad Pro 10.5</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">12.770.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp23.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Sony Xperia</h5>
+							    <p class="card-text">Sony</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">10.999.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp24.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Huawei MediaPad</h5>
+							    <p class="card-text">Huawei</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">3.000.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="DanhMuc">
+					<div class="TenDanhMuc" style="border-bottom: 30px solid #17a2b8;"><div class="Name">Xem nhiều nhất</div></div>
+					<hr style="margin-top: 0; border-top: 2px solid #17a2b8;">
+					<div class="row">
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp25.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Iphone X</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">12.750.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp26.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">HTC 10 evo</h5>
+							    <p class="card-text">HTC</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">6.600.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp27.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">iPad Mini 4</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">8.790.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp28.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">HTC U Ultra</h5>
+							    <p class="card-text">HTC</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">23.000.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp29.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Galaxy Tab A6</h5>
+							    <p class="card-text">Samsung</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">12.650.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp30.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Galaxy S8 Plus</h5>
+							    <p class="card-text">Samsung</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">16.360.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp31.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Sony Xperia XZ1</h5>
+							    <p class="card-text">Sony</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">5.555.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp32.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Xperia XZ Premium</h5>
+							    <p class="card-text">Sony</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">6.777.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp33.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Galaxy Note</h5>
+							    <p class="card-text">Samsung</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">8.999.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp34.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Điện thoại iPhone 8</h5>
+							    <p class="card-text">Apple</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">15.790.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp35.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">HTC One A9S</h5>
+							    <p class="card-text">HTC</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">7.880.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="card" style="width: 14rem;">
+							  <img style="position: relative;" class="card-img-top" src="images/sanpham/sp36.png" alt="Card image cap">
+							  <a href="subsites/XemChiTiet.html" class="XemChiTiet">Xem chi tiết</a>
+							  <div class="card-body">
+							    <h5 class="card-title">Huawei MediaPad</h5>
+							    <p class="card-text">Huawei</p>
+							    <hr>
+							    <div style="color: #1467c1; font-weight: bold; margin-bottom: 10px;">6.790.000 đ</div>
+							    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#ThemVaoGioHangModal">Thêm vào giỏ hàng <img src="images/cart.png"></button>
+							  </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="footer">
 		<div class="row">
 			<div class="col-md-2"></div>
