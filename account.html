@@ -4,7 +4,7 @@
 <!-- Mirrored from kute-themes.com/html/smartmarket/html/blog-list.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 10 Apr 2018 03:13:09 GMT -->
 <head>
     <meta charset="utf-8">
-    <title>Blog - SmartMarket</title>
+    <title>Tài khoản người dùng</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel='stylesheet' type='text/css' href='css/bootstrap.min.css'>
     <link rel="stylesheet prefetch" href="http://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css">
@@ -84,14 +84,25 @@
                             </div>
                         </div>
                     </li>
-                   <li class="menu-item menu-item-has-children"><a href="pages/admin-order.html" class="kt-item-title" title="PAGES">ADMIN</a>
-                    </li>
+                    <!-- <li class="menu-item menu-item-has-children"><a href="pages/admin-order.html" class="kt-item-title" title="PAGES">ADMIN TEST</a>
+                    </li> -->
                 </ul>
             </div>
             <div class="box-items-right">
-                <a data-toggle="modal" href="#modal-login" class="">Đăng nhập</a>
-                <label> / </label>
-                <a data-toggle="modal" href="#modal-register" class="">Đăng ký</a>
+                <div class="login-register " >
+                    <a data-toggle="modal" href="#modal-login" class="">Đăng nhập</a>
+                    <label> / </label>
+                    <a data-toggle="modal" href="#modal-register" class="">Đăng ký</a>
+                </div>
+                <div class="dropdown hide-div">
+                    <a class="btn btn-primary dropdown-toggle" href="#" role="button" data-toggle="dropdown">Nguyễn Hoàng Anh
+                    <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="account.html">Hồ Sơ</a></li>
+                        <li><a href="account.html">Đơn Hàng</a></li>
+                        <li><a href="index.html">Đăng xuất</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
          
@@ -109,10 +120,10 @@
                             <div class="form-login-input">
                                 <form>
                                     <div class="form-input">
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input type="text" class="form-control" value="user1" placeholder="Email">
                                     </div>
                                     <div class="form-input">
-                                        <input type="password" class="form-control" placeholder="Mật khẩu">
+                                        <input type="password" class="form-control" value="123" placeholder="Mật khẩu">
                                     </div>
                                     <div class="checkbox cb-dieukhoan">
                                         <label><input type="checkbox" value="">Ghi nhớ</label>
@@ -302,7 +313,7 @@
                                 <a href="#"><span>Home</span></a>
                             </li>
                             <li class="trail-item trail-end">
-                                <span>Blog List Siderbar</span>
+                                <span>Tài khoản</span>
                             </li>
                         </ul>
                     </nav>
@@ -388,20 +399,28 @@
                     </div>
                     <div class="info-profile">
                        <div class="row btn-save">
-                            <a href="#" class="btn-check process"><i class="fa fa-plus" aria-hidden="true"></i>Thêm địa chỉ mới</a>
+                            <a href="javascript:;" class="btn-check process"><i class="fa fa-plus" aria-hidden="true"></i>Thêm địa chỉ mới</a>
                         </div>
+                        <!-- <div class="add-new-address">
+                            <div class="form-group">
+                              <label for="usr">Địa chỉ mới:</label>
+                              <input type="text" class="form-control" id="usr" style="margin-bottom: 10px">
+                            </div>
+                            <button type="button" class="btn btn-success submit-add-address"><i class="fa fa-plus-circle" aria-hidden="true"></i> Thêm</button>
+                         
+                        </div> -->
                         <div class="row">
                             <table class="table-hover table-borderless">
-                                <tbody>
+                                <tbody id='list-address-profile'>
                                     <tr>
                                         <td width="20%">Địa chỉ 1:</td>
                                         <td>146 Phố Hàng Gà, Ba Đình, Đông Anh, Hà Nội</td>
-                                        <td><a href="#">xóa</a></td>
+                                        <td><a href="javascript:;" class='remove-address'>xóa</a></td>
                                     </tr>
                                     <tr>
                                         <td width="20%">Địa chỉ 2:</td>
                                         <td> 44B Lý Thường Kiệt, Hoàn Kiếm, Hà Nội</td>
-                                        <td><a href="#">xóa</a></td>
+                                        <td><a href="javascript:;" class='remove-address'>xóa</a></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -538,7 +557,7 @@
                                     <div class="col-lg-4 col-md-4 col-sm-12">
                                         <div class="total-price-order">
                                             <p>Tổng tiền:</p>
-                                            <a href="javascript:;">22.090.00 đ</a>
+                                            <a href="javascript:;">47.180.000 đ</a>
                                         </div>
                                     </div>
                                 </div>
@@ -546,17 +565,47 @@
                             <div class="body-order">
                                 <div class="row">
                                     <div class="col-lg-4 col-md-4 col-sm-12">
-                                        <div class="left-order">
-                                            <a href="#">
-                                                <img class="thumb-img-order" src="images/imgs/ss-s8-0.png" alt="image order">
-                                            </a>
+                                        <div class="row item-product-his">
+                                            <div class="left-order">
+                                                <a href="#">
+                                                    <img class="thumb-img-order" src="images/imgs/ip-8-64-0.png" alt="image order">
+                                                </a>
+                                            </div>
+                                            <div class="right-order">
+                                                <a class="name-product-order" href="#">Iphone 8 64Gb</a>
+                                                <label>Giá:</label>
+                                                <a href="javascript:;">15.090.000 đ</a>
+                                                <label>x</label>
+                                                <label>1</label>
+                                            </div>
                                         </div>
-                                        <div class="right-order">
-                                            <a class="name-product-order" href="#">Iphone 8 Plus 64Gb</a>
-                                            <label>Giá:</label>
-                                            <a href="javascript:;">22.090.00 đ</a>
-                                            <label>x</label>
-                                            <label>1</label>
+                                        <div class="row item-product-his">
+                                            <div class="left-order">
+                                                <a href="#">
+                                                    <img class="thumb-img-order" src="images/imgs/ss-s8-0.png" alt="image order">
+                                                </a>
+                                            </div>
+                                            <div class="right-order">
+                                                <a class="name-product-order" href="#">SamSung S8 Plus 64Gb</a>
+                                                <label>Giá:</label>
+                                                <a href="javascript:;">22.090.000 đ</a>
+                                                <label>x</label>
+                                                <label>1</label>
+                                            </div>
+                                        </div>
+                                        <div class="row item-product-his">
+                                            <div class="left-order">
+                                                <a href="#">
+                                                    <img class="thumb-img-order" src="images/imgs/oppo-f7-128-0.jpg" alt="image order">
+                                                </a>
+                                            </div>
+                                            <div class="right-order">
+                                                <a class="name-product-order" href="#">OPPO F7 128GB</a>
+                                                <label>Giá:</label>
+                                                <a href="javascript:;">10.090.000 đ</a>
+                                                <label>x</label>
+                                                <label>1</label>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-lg-8 col-md-8 col-sm-12">
