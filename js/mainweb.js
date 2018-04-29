@@ -27,11 +27,36 @@ $('document').ready(function(){
     var count = parseInt($('span.count:first').text());
     ++count;
     $('span.count').text(count);
+
+    var total = getMoney($('.subtotal span:first').text());
+
+    total = total + 10000000;
+
+    var fm_total = formatMoney(total);
+    $('.subtotal span').text(fm_total);
+    $('.header-mini-cart span.total').text(fm_total);
+
   });
 
   // remove product cart 
   $('ul.items').on('click','.remove-li',function(){
     $(this).closest('li').remove();
+
+    var count = parseInt($('span.count:first').text());
+    --count;
+    $('span.count').text(count);
+
+    var c = $(this).parent().find('label.quantity-mini-cart').text();
+    var count = parseInt(c);
+
+    var unitprice = getMoney($(this).parent().find('label.unit-price').text());
+    var total = getMoney($('.subtotal span:first').text());
+
+    total = total - unitprice*count;
+
+    var fm_total = formatMoney(total);
+    $('.subtotal span').text(fm_total);
+    $('.header-mini-cart span.total').text(fm_total);
 
   });
 
@@ -47,33 +72,33 @@ $('document').ready(function(){
   //  + -  số lượng ở mini cart
   $('ul.items').on('click','.price .minus',function(){
       var id = $(this).closest('li').index();
-
-      culc_money(-1);
+     var parent = $(this).parent();
+      culc_money(-1, parent);
   });
   $('ul.items').on('click','.price .plus',function(){
      var id = $(this).closest('li').index();
-
-      culc_money(1);
+     var parent = $(this).parent();
+      culc_money(1, parent);
   });
 
-  function culc_money(id){
-    var quantity = parseInt($('label.quantity-mini-cart:first').text());
+  function culc_money(c, parent){
+    var quantity = parseInt(parent.find('label.quantity-mini-cart').text());
 
-      if(id < 0){
+      if(c < 0){
         if(quantity<2)return;
         --quantity;
       }else ++quantity;
 
-      $('label.quantity-mini-cart').text(quantity);
-
+       parent.find('label.quantity-mini-cart').text(quantity);
+      
       //tăng tiền tổng
-      var fm_price = $('label.unit-price:first').text();
+      var fm_price = parent.find('label.unit-price').text();
       var unitprice = getMoney(fm_price);
 
       var t = $('.subtotal span:first').text();
       var total = getMoney(t);
 
-      if(id < 0){
+      if(c < 0){
           total = total - unitprice;
       }else total = total + unitprice;
 
@@ -147,17 +172,40 @@ $('document').ready(function(){
         var user = $('.form-login-input form :text').val();
         var pass = $('.form-login-input form :password').val();
 
+        console.log(user);
+        console.log(pass);
+
         if(user === 'user1' && pass === '123'){  
           $('.box-items-right .dropdown').toggleClass('hide-div');
           $('.box-items-right .login-register').toggleClass('hide-div');
           $('button.submit-login').attr('data-dismiss','modal');
+        }else if(user === 'admin' && pass === '123'){
+          window.location.href='./pages/admin-order.html';
         }else{
           $('button.submit-login').removeAttr('data-dismiss');
         }
     });
       
-    
+    $('.info-profile a.process').on('click',function(){
+        var tr =`
+              <tr>
+                  <td width="20%">Địa chỉ 1:</td>
+                  <td>146 Phố Hàng Gà, Ba Đình, Đông Anh, Hà Nội</td>
+                  <td><a href="javascript:;" class='remove-address'>xóa</a></td>
+              </tr>
+        `;
+         $('#list-address-profile').append(tr);
+    });
+    $('#list-address-profile').on('click', '.remove-address' ,function(){
+      $(this).closest('tr').remove();
+  });
 
+    // $('.info-profile a.process').on('click',function(){
+    //   $('.add-new-address').toggle(1000);
+    // });
+    // $('.info-profile a.process').on('click',function(){
+    //   $('.add-new-address').toggle(1000);
+    // });
 });
 
   function openCity(evt, cityName) {

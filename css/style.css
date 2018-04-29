@@ -1871,6 +1871,11 @@ th, td {
 .body-order .line-progress{
     margin-top: 20px;
 }
+
+.item-product-his{
+    margin-left: 0px;
+    margin-right: 0px;
+}
 /* -----------------------END ACCOUNT-----------------------------*/
 /* -----------------------blog-homepage-----------------------------*/
 .blog-homepage .blog-item{
@@ -5443,6 +5448,11 @@ blockquote span{
     border: 2px solid #ebebeb;
     padding: 3px 41px;
     margin:6px 0 30px 0;
+}
+.add-new-address{
+    margin-bottom: 20px;
+    margin-right: 30px;
+    display: none;
 }
 .form-shipping.order .btn-check.process{
     width: 100%;
