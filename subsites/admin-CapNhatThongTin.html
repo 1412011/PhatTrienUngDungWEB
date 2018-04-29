@@ -28,13 +28,13 @@
 <body style="background: url(../images/bg1.jpg")">
 	<div class="container-fluid" style="padding: 0 30px; color: #fff; width: 1319px;">
 		<div  style="float: right; position: relative;">
-			<span id="TaiKhoanEmail" href="" style="cursor: pointer; font-size: 16px; color: #fff;"><img src="../images/avatar.png" style="width: 40px; height: 40px;"> nguyenhoanganh28@gmail.com <img src="../images/icon-arrowdown.png" style="width: 40px; height: 40px;"></span>
-			<div id="subTaiKhoanEmail" style="position: absolute; top: 40px; left: 118px; width: 200px; height: 200px; background-color: #fff; z-index: 1000; display: none;">
+			<span id="TaiKhoanEmail" href="" style="cursor: pointer; font-size: 16px; color: #fff;"><img src="../images/admin.png" style="width: 40px; height: 40px;"> Quản trị viên: Hoàng Anh <img src="../images/icon-arrowdown.png" style="width: 40px; height: 40px;"></span>
+			<div id="subTaiKhoanEmail" style="position: absolute; top: 40px; left: 68px; width: 200px; height: 150px; background-color: #fff; z-index: 1000; display: none;">
 				<div class="list-group">
-				  <a href="CapNhatThongTin.html" class="list-group-item list-group-item-action"><i>Cập nhật thông tin</i></a>
-				  <a href="LichSuGiaoDich.html" class="list-group-item list-group-item-action"><i>Xem lịch sử giao dịch</i></a>
-				  <a href="#" class="list-group-item list-group-item-action"><i>Sản phẩm yêu thích</i></a>
-				  <a href="#" class="list-group-item list-group-item-action"><i>Điểm thưởng</i></a>
+				  <a href="../admin-Dashboard.html" class="list-group-item list-group-item-action"><i>Dashboard</i></a>
+				  <a href="admin-CapNhatThongTin.html" class="list-group-item list-group-item-action"><i>Cập nhật thông tin</i></a>
+				  <a href="admin-QuanLySanPham.html" class="list-group-item list-group-item-action"><i>Quản lý sản phẩm</i></a>
+				  <a href="admin-QuanLyDonHang.html" class="list-group-item list-group-item-action"><i>Quản lý đơn hàng</i></a>
 				  <a href="../index.html" class="list-group-item list-group-item-action"><b>Đăng xuất</b></a>
 				</div>
 			</div>
@@ -43,26 +43,28 @@
 		<div class="row">
 			<div class="col-3">
 				<div style="height: 534px; background-color: rgba(255,255,255,0.1); border-radius: 5px;">
-					<div style="text-align: center; padding-top: 30px;"><img style="width: 150px; height: 150px;" src="../images/avatar.png"></div>
-					<div style="padding-top: 10px; text-align: center; font-weight: bold; font-size: 17px;">nguyenhoanganh28@gmail.com</div>
-					<div style="text-align: center; color: #f6ce4c; font-weight: bold; font-size: 25px;">XU: 2500đ</div>
+					<div style="text-align: center; padding-top: 30px;"><img style="width: 150px; height: 150px;" src="../images/admin.png"></div>
+					<div style="padding-top: 10px; text-align: center; font-weight: bold; font-size: 17px;">anhhoang_96@gmail.com</div>
+					<div style="text-align: center; color: #f6ce4c; font-weight: bold; font-size: 25px;">ADMIN</div>
 					<div class="list-group TuyChon" style="padding-top: 20px;">
-					  <a href="CapNhatThongTin.html" class="list-group-item list-group-item-action active"><img src="../images/icon-user.png"> Thông tin cá nhân</a>
-					  <a href="LichSuGiaoDich.html" class="list-group-item list-group-item-action"><img src="../images/icon-check.png"> Lịch sử giao dịch</a>
+					  <a href="../admin-Dashboard.html" class="list-group-item list-group-item-action"><img src="../images/icon-dashboard.png"> Dashboard</a>
+					  <a href="admin-CapNhatThongTin.html" class="list-group-item list-group-item-action active"><img src="../images/icon-user.png"> Thông tin cá nhân</a>
+					  <a href="admin-QuanLySanPham.html" class="list-group-item list-group-item-action"><img src="../images/icon-product.png"> Quản lý sản phẩm</a>
+					  <a href="admin-QuanLyDonHang.html" class="list-group-item list-group-item-action"><img src="../images/icon-check.png"> Quản lý đơn hàng</a>
 					</div>
 				</div>
 			</div>
 			<div class="col-9">
-				<div style="background-color: rgba(255,255,255,0.1); border-radius: 5px; padding: 50px">
+				<div style="background-color: rgba(255,255,255,0.1); border-radius: 5px; padding: 50px; height: 534px;">
 					<h2>CẬP NHẬT THÔNG TIN</h2>
-					<form style="padding-right: 20px; padding-top: 30px" action="DaDangNhap-index.html" method="get">
+					<div style="padding-right: 20px; padding-top: 30px">
 						<div class="form-group">
 							<div class="row">
 								<div class="col-3">
 									<label for="">EMAIL</label>
 								</div>
 								<div class="col-7">
-									<input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" value="nguyenhoanganh28@gmail.com" disabled="disabled">
+									<input type="email" class="form-control" id="Email1" aria-describedby="emailHelp" value="anhhoang_96@gmail.com" disabled="disabled">
 								</div>
 							</div>
 						</div>
@@ -82,7 +84,7 @@
 									<label for="">HỌ TÊN</label>
 								</div>
 								<div class="col-7">
-									<input type="text" class="form-control" id="Email1" aria-describedby="emailHelp" value="Nguyễn Hoàng Anh">
+									<input type="text" class="form-control" id="Email1" aria-describedby="emailHelp" value="Anh Hoàng Nguyễn">
 								</div>
 							</div>
 						</div>
@@ -132,10 +134,28 @@
 							<div class="col-7"><button class="btn btn-warning" type="submit">CẬP NHẬT</button></div>
 						</div>
 					</form>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	<!-- start Modal chuc nang -->
+		<div class="modal fade" id="ChucNangChuaSS" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Thông báo</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        Chức năng hiện chưa sẵn sàng
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- end Modal chuc nang -->
 	<div class="footer">
 		<div class="row">
 			<div class="col-md-2"></div>
