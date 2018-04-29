@@ -186,26 +186,36 @@ $('document').ready(function(){
         }
     });
       
-    $('.info-profile a.process').on('click',function(){
-        var tr =`
-              <tr>
-                  <td width="20%">Địa chỉ 1:</td>
-                  <td>146 Phố Hàng Gà, Ba Đình, Đông Anh, Hà Nội</td>
-                  <td><a href="javascript:;" class='remove-address'>xóa</a></td>
-              </tr>
-        `;
-         $('#list-address-profile').append(tr);
-    });
+    // $('.info-profile a.process').on('click',function(){
+    //     var tr =`
+    //           <tr>
+    //               <td width="20%">Địa chỉ 1:</td>
+    //               <td>146 Phố Hàng Gà, Ba Đình, Đông Anh, Hà Nội</td>
+    //               <td><a href="javascript:;" class='remove-address'>xóa</a></td>
+    //           </tr>
+    //     `;
+    //      $('#list-address-profile').append(tr);
+    // });
     $('#list-address-profile').on('click', '.remove-address' ,function(){
       $(this).closest('tr').remove();
   });
 
-    // $('.info-profile a.process').on('click',function(){
-    //   $('.add-new-address').toggle(1000);
-    // });
-    // $('.info-profile a.process').on('click',function(){
-    //   $('.add-new-address').toggle(1000);
-    // });
+    $('.info-profile a.process').on('click',function(){
+      $('.add-new-address').toggle(1000);
+    });
+    $('button.submit-add-address').on('click',function(){
+        var sl = $('#list-address-profile tr').length;
+        sl = sl + 1;
+        var address = $('#addr').val();
+        var tr =`
+                  <tr>
+                       <td width="20%">Địa chỉ `+sl+`:</td>
+                       <td>`+address+`</td>
+                       <td><a href="javascript:;" class='remove-address'>xóa</a></td>
+                  </tr>
+               `;
+         $('#list-address-profile').append(tr);
+    });
 });
 
   function openCity(evt, cityName) {
